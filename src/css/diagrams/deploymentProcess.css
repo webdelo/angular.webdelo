@@ -1,0 +1,760 @@
+.deployment {
+    height: 500px;
+}
+
+
+.figure.deployment-process .btn {
+    position: absolute;
+    top: 250px;
+    left: 35px;
+    height: 40px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    text-align: center;
+    z-index: 6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: fadeIn 400ms 8s forwards;
+    -o-animation: fadeIn 400ms 8s forwards;
+    animation: fadeIn 400ms 8s forwards;
+}
+
+.figure.deployment-process {
+    height: 400px;
+    width: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.figure.deployment-process .figure-button {
+    position: absolute;
+    top: 150px;
+    left: 285px;
+}
+
+.figure.deployment-process .circle {
+    margin-top: -30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-box-shadow: 0 0 3px #949393;
+    -moz-box-shadow: 0 0 3px #949393;
+    box-shadow: 0 0 3px #949393;
+}
+
+.figure.deployment-process .zone-title {
+    position: absolute;
+    font-weight: 500;
+    right: 85px;
+    top: 0;
+    text-align: center;
+    margin-left: -20px;
+    width: 100px;
+}
+
+.figure.deployment-process .dev-zone {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    background: #ef7360;
+    opacity: 0;
+}
+.figure.deployment-process .dev-zone .dev-zone-title {
+    color: #ef7360;
+    line-height: 14px;
+}
+
+.figure.deployment-process .production-zone {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    opacity: 0;
+}
+.figure.deployment-process .production-zone .production-zone-fillable {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background: #45bdf5;
+    text-align: center;
+    border-radius: 50%;
+}
+.figure.deployment-process .fillable-title {
+    position: absolute;
+    top: 23px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    z-index: 30;
+    opacity: 0;
+}
+.figure.deployment-process .production-zone .production-zone-fill {
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    height: 0px;
+    background: #3c9cce;
+    text-align: center;
+    opacity: 1;
+}
+
+.figure.deployment-process .production-zone .production-zone-title {
+    line-height: 14px;
+    color: #3c9cce;
+    text-align: left;
+}
+.figure.deployment-process .production-zone .production-zone-title .status {
+    top: 33px;
+    left: 0;
+    position: absolute;
+    padding-left: 15px;
+}
+.figure.deployment-process .production-zone .production-zone-title .status-offline {
+    font-size: 13px;
+    color: #c5584c;
+    opacity: 0;
+}
+.figure.deployment-process .production-zone .production-zone-title .status-offline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #c5584c;
+    -webkit-animation: pulsateOffline 1s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    -o-animation: pulsateOffline 1s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    animation: pulsateOffline 1s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+}
+
+
+.figure.deployment-process .production-zone .production-zone-title .status-preparing {
+    font-size: 13px;
+    color: #c55e9d;
+    opacity:0;
+}
+.figure.deployment-process .production-zone .production-zone-title .status-preparing:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #c55e9d;
+    -webkit-animation: pulsatePreparing 500ms infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    -o-animation: pulsatePreparing 500ms infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    animation: pulsatePreparing 500ms infinite cubic-bezier(0.46,0.53,0.51,1.01);
+}
+
+.figure.deployment-process .production-zone .production-zone-title .status-ready {
+    font-size: 13px;
+    color: #3ac564;
+    opacity:0;
+}
+.figure.deployment-process .production-zone .production-zone-title .status-ready:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #3ac564;
+    -webkit-animation: pulsateReady 1s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    -o-animation: pulsateReady 1s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    animation: pulsateReady 1s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+}
+@keyframes pulsateReady {
+    0% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+    50% {
+        -webkit-box-shadow: 0 0 0 2px rgba(58, 197, 100, 0.36);
+        -moz-box-shadow: 0 0 0 2px rgba(58, 197, 100, 0.36);
+        box-shadow: 0 0 0 2px rgba(58, 197, 100, 0.36);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+}
+@keyframes pulsatePreparing {
+    0% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+    50% {
+        -webkit-box-shadow: 0 0 0 2px rgba(197, 94, 157, 0.41);
+        -moz-box-shadow: 0 0 0 2px rgba(197, 94, 157, 0.41);
+        box-shadow: 0 0 0 2px rgba(197, 94, 157, 0.41);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+}
+@keyframes pulsateOffline {
+    0% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+    50% {
+        -webkit-box-shadow: 0 0 0 2px rgba(197, 88, 76, 0.44);
+        -moz-box-shadow: 0 0 0 2px rgba(197, 88, 76, 0.44);
+        box-shadow: 0 0 0 2px rgba(197, 88, 76, 0.44);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+}
+
+
+.figure.deployment-process .search-analytics {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 125px;
+    left: 170px;
+    background: #FF0C6F;
+    text-align: center;
+}
+.figure.deployment-process.run .search-analytics .pointer {
+    height: 1px;
+    background: #888888;
+    width: 50px;
+    position: absolute;
+    right: 9px;
+    top: 55px;
+    z-index: 3;
+    transform: rotate(-67deg);
+}
+.figure.deployment-process .search-analytics .search-analytics-title {
+    position: relative;
+    font-weight: 400;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    margin-left: 40px;
+    width: 270px;
+    color: #4f4f4f;
+}
+
+.figure.deployment-process .payment-systems {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 185px;
+    left: 232px;
+    background: #C10F0F;
+    text-align: center;
+}
+.figure.deployment-process.run .payment-systems .pointer {
+    height: 1px;
+    background: #888888;
+    width: 50px;
+    position: absolute;
+    right: 32px;
+    top: 33px;
+    z-index: 3;
+    transform: rotate(-22deg);
+}
+.figure.deployment-process .payment-systems .payment-systems-title {
+    position: relative;
+    font-weight: 400;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    margin-left: 40px;
+    width: 270px;
+    color: #4f4f4f;
+}
+
+.figure.deployment-process .server-settings {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 330px;
+    left: 172px;
+    background: #636363;
+    text-align: center;
+}
+.figure.deployment-process.run .server-settings .pointer {
+    height: 1px;
+    background: #888888;
+    width: 50px;
+    position: absolute;
+    right: 11px;
+    top: -21px;
+    z-index: 3;
+    transform: rotate(64deg);
+}
+.figure.deployment-process .server-settings .zone-title {
+    position: relative;
+    font-weight: 400;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    margin-left: 40px;
+    width: 270px;
+    color: #ff9901;
+}
+
+.figure.deployment-process .subscription-systems {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 267px;
+    left: 232px;
+    background: #FFD800;
+    text-align: center;
+}
+.figure.deployment-process.run .subscription-systems .pointer {
+    height: 1px;
+    background: #888888;
+    width: 50px;
+    position: absolute;
+    right: 31px;
+    top: 1px;
+    z-index: 3;
+    transform: rotate(22deg);
+}
+.figure.deployment-process .subscription-systems .subscription-systems-title {
+    position: relative;
+    font-weight: 400;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    margin-left: 40px;
+    width: 270px;
+    color: #4f4f4f;
+}
+
+.figure.deployment-process .production-container .point {
+    position: absolute;
+}
+
+.figure.deployment-process .production-container .point:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #f2f2f2;
+    left: -40px;
+    top: -6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+
+@keyframes ready {
+    100% {
+        background: #55dc7d;
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.deployment-process.figure .figure-header {
+    background: #57c17d;
+    top: 150px;
+    right: 200px;
+    left: auto;
+    -webkit-animation: pulsateDeployment 1.75s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    -o-animation: pulsateDeployment 1.75s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    animation: pulsateDeployment 1.75s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+}
+.figure .figure-header:hover {
+    background: #d6bd2f;
+}
+
+@keyframes pulsateDeployment {
+    0% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+    50% {
+        box-shadow: 0px 0px 0px 20px rgba(87, 193, 125, 0.35);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+}
+
+.additional {
+    font-size: 12px;
+}
+
+.production-container .zone-ready,
+.production-container .zone-config {
+    opacity: 0;
+}
+
+.production-container .zone-ready {
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.production-container .zone-config {
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.figure .files {
+    opacity: 0;
+    font-size: 22px;
+    position: absolute;
+    top: 220px;
+    left: 370px;
+    color: #ef7360;
+}
+
+
+@keyframes fadeInMy {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes moveFilesToProd {
+    10% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+        top: 260px;
+    }
+    100% {
+        top: 220px;
+        left: 140px;
+        color: #3c9cce;
+        opacity: 1;
+    }
+}
+@keyframes devZoneShow {
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes serverSettingsOn {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInZoneReady {
+    20% {
+        opacity: 1;
+        color: #27ff15;
+    }
+    90% {
+        color: #27ff15;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInZoneConfig {
+    20% {
+        opacity: 1;
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes hideStatusOffline {
+    5% {
+        display: block;
+        opacity: 1;
+    }
+    90% {
+        opacity:1;
+    }
+    95% {
+        opacity:0;
+    }
+    100% {
+        display: none;
+    }
+}
+@keyframes preparingStatusShow {
+    5% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes readyStatusShow {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fillProductionZone {
+    100% {
+        height: 90px;
+    }
+}
+
+.figure.run .files {
+    -webkit-animation: moveFilesToProd 2s forwards;
+    -o-animation: moveFilesToProd 2s forwards;
+    animation: moveFilesToProd 2s forwards;
+    -webkit-animation-delay: 1300ms;
+    -moz-animation-delay: 1300ms;
+    -o-animation-delay: 1300ms;
+    animation-delay: 1300ms;
+}
+
+.server-settings,
+.search-analytics,
+.subscription-systems,
+.payment-systems {
+    opacity: 0;
+}
+
+
+.figure.deployment-process.run .production-zone .fillable-title {
+    -webkit-animation: fadeIn 100ms forwards;
+    -o-animation: fadeIn 100ms forwards;
+    animation: fadeIn 100ms forwards;
+    -webkit-animation-delay: 2600ms;
+    -moz-animation-delay: 2600ms;
+    -o-animation-delay: 2600ms;
+    animation-delay: 2600ms;
+}
+
+.figure.deployment-process.run .production-zone .production-zone-fill {
+    -webkit-animation: fillProductionZone 4100ms forwards;
+    -o-animation: fillProductionZone 4100ms forwards;
+    animation: fillProductionZone 4100ms forwards;
+    -webkit-animation-delay: 2600ms;
+    -moz-animation-delay: 2600ms;
+    -o-animation-delay: 2600ms;
+    animation-delay: 2600ms;
+}
+
+.figure.deployment-process.run .production-zone {
+    -webkit-animation: fadeIn 200ms forwards;
+    -o-animation: fadeIn 200ms forwards;
+    animation: fadeIn 200ms forwards;
+    -webkit-animation-delay: 200ms;
+    -moz-animation-delay: 200ms;
+    -o-animation-delay: 200ms;
+    animation-delay: 200ms;
+}
+
+.figure.deployment-process.run .dev-zone {
+    -webkit-animation: devZoneShow 2400ms forwards;
+    -o-animation: devZoneShow 2400ms forwards;
+    animation: devZoneShow 2400ms forwards;
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    -o-animation-delay: 500ms;
+    animation-delay: 500ms;
+}
+
+/* Start statuses toggle */
+.figure.run .status-offline {
+    -webkit-animation: hideStatusOffline 3300ms forwards;
+    -o-animation: hideStatusOffline 3300ms forwards;
+    animation: hideStatusOffline 3300ms forwards;
+}
+.figure.run .status-preparing {
+    -webkit-animation: preparingStatusShow 5000ms forwards;
+    -o-animation: preparingStatusShow 5000ms forwards;
+    animation: preparingStatusShow 5000ms forwards;
+    -webkit-animation-delay: 3000ms;
+    -moz-animation-delay: 3000ms;
+    -o-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+.figure.run .status-ready {
+    -webkit-animation: readyStatusShow 200ms forwards;
+    -o-animation: readyStatusShow 200ms forwards;
+    animation: readyStatusShow 200ms forwards;
+    -webkit-animation-delay: 8000ms;
+    -moz-animation-delay: 8000ms;
+    -o-animation-delay: 8000ms;
+    animation-delay: 8000ms;
+}
+/* Finish statuses toggle */
+
+/* Start Server Settings */
+.figure.run .server-settings {
+    -webkit-animation: serverSettingsOn 250ms forwards;
+    -o-animation: serverSettingsOn 250ms forwards;
+    animation: serverSettingsOn 250ms forwards;
+    -webkit-animation-delay: 3000ms;
+    -moz-animation-delay: 3000ms;
+    -o-animation-delay: 3000ms;
+    animation-delay: 3000ms;
+}
+
+.figure.run .server-settings .zone-config {
+    -webkit-animation: fadeInZoneConfig 600ms forwards;
+    -o-animation: fadeInZoneConfig 600ms forwards;
+    animation: fadeInZoneConfig 600ms forwards;
+    -webkit-animation-delay: 3300ms;
+    -moz-animation-delay: 3300ms;
+    -o-animation-delay: 3300ms;
+    animation-delay: 3300ms;
+}
+
+.figure.run .server-settings .zone-ready {
+    -webkit-animation: fadeInZoneReady 300ms forwards;
+    -o-animation: fadeInZoneReady 300ms forwards;
+    animation: fadeInZoneReady 300ms forwards;
+    -webkit-animation-delay: 3900ms;
+    -moz-animation-delay: 3900ms;
+    -o-animation-delay: 3900ms;
+    animation-delay: 3900ms;
+}
+/* Finish Server Settings */
+
+
+/* Start Search analytics */
+.figure.run .search-analytics {
+    -webkit-animation: serverSettingsOn 250ms forwards;
+    -o-animation: serverSettingsOn 250ms forwards;
+    animation: serverSettingsOn 250ms forwards;
+    -webkit-animation-delay: 4200ms;
+    -moz-animation-delay: 4200ms;
+    -o-animation-delay: 4200ms;
+    animation-delay: 4200ms;
+}
+
+.figure.run .search-analytics .zone-config {
+    -webkit-animation: fadeInZoneConfig 600ms forwards;
+    -o-animation: fadeInZoneConfig 600ms forwards;
+    animation: fadeInZoneConfig 600ms forwards;
+    -webkit-animation-delay: 4500ms;
+    -moz-animation-delay: 4500ms;
+    -o-animation-delay: 4500ms;
+    animation-delay: 4500ms;
+}
+
+.figure.run .search-analytics .zone-ready {
+    -webkit-animation: fadeInZoneReady 300ms forwards;
+    -o-animation: fadeInZoneReady 300ms forwards;
+    animation: fadeInZoneReady 300ms forwards;
+    -webkit-animation-delay: 5100ms;
+    -moz-animation-delay: 5100ms;
+    -o-animation-delay: 5100ms;
+    animation-delay: 5100ms;
+}
+/* Finish Search analytics */
+
+/* Start Subscription system */
+.figure.run .subscription-systems {
+    -webkit-animation: serverSettingsOn 250ms forwards;
+    -o-animation: serverSettingsOn 250ms forwards;
+    animation: serverSettingsOn 250ms forwards;
+    -webkit-animation-delay: 5400ms;
+    -moz-animation-delay: 5400ms;
+    -o-animation-delay: 5400ms;
+    animation-delay: 5400ms;
+}
+
+.figure.run .subscription-systems .zone-config {
+    -webkit-animation: fadeInZoneConfig 600ms forwards;
+    -o-animation: fadeInZoneConfig 600ms forwards;
+    animation: fadeInZoneConfig 600ms forwards;
+    -webkit-animation-delay: 5700ms;
+    -moz-animation-delay: 5700ms;
+    -o-animation-delay: 5700ms;
+    animation-delay: 5700ms;
+}
+
+.figure.run .subscription-systems .zone-ready {
+    -webkit-animation: fadeInZoneReady 300ms forwards;
+    -o-animation: fadeInZoneReady 300ms forwards;
+    animation: fadeInZoneReady 300ms forwards;
+    -webkit-animation-delay: 6300ms;
+    -moz-animation-delay: 6300ms;
+    -o-animation-delay: 6300ms;
+    animation-delay: 6300ms;
+}
+/* Finish Subscription system */
+
+/* Start Payment system */
+.figure.run .payment-systems {
+    -webkit-animation: serverSettingsOn 250ms forwards;
+    -o-animation: serverSettingsOn 250ms forwards;
+    animation: serverSettingsOn 250ms forwards;
+    -webkit-animation-delay: 6300ms;
+    -moz-animation-delay: 6300ms;
+    -o-animation-delay: 6300ms;
+    animation-delay: 6300ms;
+}
+
+.figure.run .payment-systems .zone-config {
+    -webkit-animation: fadeInZoneConfig 600ms forwards;
+    -o-animation: fadeInZoneConfig 600ms forwards;
+    animation: fadeInZoneConfig 600ms forwards;
+    -webkit-animation-delay: 6600ms;
+    -moz-animation-delay: 6600ms;
+    -o-animation-delay: 6600ms;
+    animation-delay: 6600ms;
+}
+
+.figure.run .payment-systems .zone-ready {
+    -webkit-animation: fadeInZoneReady 300ms forwards;
+    -o-animation: fadeInZoneReady 300ms forwards;
+    animation: fadeInZoneReady 300ms forwards;
+    -webkit-animation-delay: 7200ms;
+    -moz-animation-delay: 7200ms;
+    -o-animation-delay: 7200ms;
+    animation-delay: 7200ms;
+}
+/* Finish Payment system */

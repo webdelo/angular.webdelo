@@ -1,0 +1,621 @@
+.start-development .figure {
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.start-development .figure .btn {
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    height: 40px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    text-align: center;
+    z-index: 6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: fadeIn 400ms 10s forwards;
+    -o-animation: fadeIn 400ms 10s forwards;
+    animation: fadeIn 400ms 10s forwards;
+}
+
+.start-development .figure .timeline-shadow {
+    height: 4px;
+    background: #828282;
+    z-index: 0;
+    width: 0.0001%;
+    box-shadow: 0 0 3px #bbb;
+}
+.start-development .figure .timeline {
+    height: 4px;
+    background: #828282;
+    z-index: 2;
+    transition: 1s;
+    width: 0.0001%;
+}
+
+.start-development .figure .timeline .timeline-caption {
+    border: 1px solid #bfbfbf;
+    border-top: none;
+    position: relative;
+    height: 0px;
+}
+.start-development .figure.run .timeline .timeline-caption {
+    -webkit-animation: timelineCaptionGrows 1s forwards;
+    -o-animation: timelineCaptionGrows 1s forwards;
+    animation: timelineCaptionGrows 1s forwards;
+    -webkit-animation-delay: 3500ms;
+    -moz-animation-delay: 3500ms;
+    -o-animation-delay: 3500ms;
+    animation-delay: 3800ms;
+}
+
+.start-development .figure.run .timeline,
+.start-development .figure.run .timeline-shadow {
+    -webkit-animation: timelineWider 2s forwards;
+    -o-animation: timelineWider 2s forwards;
+    animation: timelineWider 2s forwards;
+}
+
+.start-development .figure.run .sprints .sprint .sprint-caption {
+    opacity: 1;
+}
+
+.start-development .figure.run .sprint:after {
+    -webkit-animation: fadeIn 200ms forwards;
+    -o-animation: fadeIn 200ms forwards;
+    animation: fadeIn 200ms forwards;
+}
+
+.start-development .figure .sprint:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #8c8c8c;
+    background: #afaeae;
+    -webkit-box-shadow: 0 0 5px #bbbbbb;
+    -moz-box-shadow: 0 0 5px #bbbbbb;
+    box-shadow: 0 0 5px #bbbbbb;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+    opacity: 0;
+    top: -3px;
+}
+
+.start-development .figure .sprints .sprint .sprint-caption {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    opacity: 0;
+    transition: 1s;
+    -webkit-transition-delay: 5s;
+    -moz-transition-delay: 5s;
+    -ms-transition-delay: 5s;
+    -o-transition-delay: 5s;
+    transition-delay: 5s;
+    margin-top: -30px;
+}
+
+.start-development .figure .sprints .sprint {
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 19.8%;
+    z-index: 3;
+    border: 0;
+}
+
+.start-development .figure .sprints .sprint .glyphicon {
+    color: #9a9a9a;
+    font-size: 9px;
+    margin-top: -3px;
+}
+
+.start-development .figure .sprints .sprint .sprint-progress {
+    height: 8px;
+    width: 0;
+    background: #25cafa;
+    z-index: 10;
+    border: 0;
+}
+
+@keyframes sprintWidthGrowsUp {
+    100% {
+        width: 100%;
+    }
+}
+@keyframes timelineWider {
+    100% {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .steps-container .step h3 {
+        padding: 5px 0;
+        margin-top: 7px;
+        margin-bottom: 3px;
+        font-size: 23px;
+    }
+
+    .steps-container .step {
+        padding: 10px;
+        min-height: inherit;
+        padding-top: 15px;
+    }
+
+    .steps-container .between-step {
+        padding: 10px 70px;
+        background: #fafafa;
+        /*margin: 0 0 0 -50px;*/
+        padding-bottom: 60px;
+    }
+
+    .steps-container .between-step blockquote {
+        margin-top: 10px;
+    }
+}
+
+.start-development .figure .sprints .sprint .sprint-finish-caption {
+    top: -140px;
+    right: 5px;
+    left: auto;
+    position: absolute;
+}
+.start-development .figure .sprints .sprint .sprint-description {
+    top: 10px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+}
+.start-development .figure .sprints .sprint .sprint-description .days {
+    font-weight: 500;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+.start-development .figure .sprints .sprint .sprint-description .hours,
+.start-development .figure .sprints .sprint .sprint-description .developers {
+    font-size: 12px;
+    width: 48%;
+    text-align: center;
+    display: none;
+}
+.start-development .figure .sprints .sprint .sprint-finish-caption .caption-pointer {
+    width: 1px;
+    height: 0px;
+    right: 0;
+    position: absolute;
+    background: #999;
+    bottom: -66px;
+}
+.start-development .figure .sprints .sprint .sprint-finish-caption .caption-textbox {
+    margin-right: -70px;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 200px;
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 0;
+    -webkit-transition:  1s;
+    -moz-transition:  1s;
+    -ms-transition:  1s;
+    -o-transition:  1s;
+    transition:  1s;
+}
+.start-development .figure .sprints .sprint .sprint-finish-caption .caption-textbox h6 {
+    text-shadow: 0 0 2px #dbdbdb;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.start-development .figure.run .sprints .sprint .sprint-finish-caption .caption-pointer {
+    /*animation: pointerHighter 1s forwards;*/
+    /*-webkit-animation-delay: 13s;*/
+    /*-moz-animation-delay: 13s;*/
+    /*-o-animation-delay: 13s;*/
+    /*animation-delay: 13s;*/
+}
+.start-development .figure.run .sprints .sprint .sprint-finish-caption .caption-textbox {
+    /*opacity: 1;*/
+}
+@keyframes pointerHighter {
+    100% {
+        bottom: -90px;
+        height: 90px;
+    }
+}
+
+
+/* Start Sprint 1 */
+.start-development .figure .sprints .sprint:nth-child(1) .sprint-title {
+    opacity: 0;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+    -webkit-transition-delay: 2300ms;
+    -moz-transition-delay: 2300ms;
+    -ms-transition-delay: 2300ms;
+    -o-transition-delay: 2300ms;
+    transition-delay: 2300ms;
+}
+.start-development .figure .sprints .sprint:nth-child(1):after {
+    bottom: -2px;
+    top: auto;
+    -webkit-animation-delay: 2700ms;
+    -moz-animation-delay: 2700ms;
+    -o-animation-delay: 2700ms;
+    animation-delay: 2700ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(1) .sprint-finish-caption .caption-textbox {
+    -webkit-transition-delay: 3400ms;
+    -moz-transition-delay: 3400ms;
+    -ms-transition-delay: 3400ms;
+    -o-transition-delay: 3400ms;
+    transition-delay: 3400ms;
+    opacity: 1;
+    width: 200px;
+    max-width: none;
+    margin-right: -100px;
+    height: 50px;
+}
+.start-development .figure.run .sprints .sprint:nth-child(1) .sprint-description {
+    -webkit-transition-delay: 2500ms;
+    -moz-transition-delay: 2500ms;
+    -ms-transition-delay: 2500ms;
+    -o-transition-delay: 2500ms;
+    transition-delay: 2500ms;
+    opacity:1;
+}
+.start-development .figure.run .sprints .sprint:nth-child(1) .sprint-finish-caption .caption-pointer {
+    animation: pointerHighter 600ms forwards;
+    -webkit-animation-delay: 2900ms;
+    -moz-animation-delay: 2900ms;
+    -o-animation-delay: 2900ms;
+    animation-delay: 2900ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(1) .sprint-progress {
+    animation: sprintWidthGrowsUp 800ms forwards;
+    -webkit-animation-delay: 2000ms;
+    -moz-animation-delay: 2000ms;
+    -o-animation-delay: 2000ms;
+    animation-delay: 2000ms;
+}
+/* Finish Sprint 1 */
+
+/* Start Sprint 2 */
+.start-development .figure .sprints .sprint:nth-child(2):after {
+    bottom: -2px;
+    top: auto;
+    -webkit-animation-delay: 4300ms;
+    -moz-animation-delay: 4300ms;
+    -o-animation-delay: 4300ms;
+    animation-delay: 4300ms;
+}
+.start-development .figure .sprints .sprint:nth-child(2) .sprint-finish-caption {
+    top: -75px;
+}
+.start-development .figure.run .sprints .sprint:nth-child(2) .sprint-description {
+    -webkit-transition-delay: 4100ms;
+    -moz-transition-delay: 4100ms;
+    -ms-transition-delay: 4100ms;
+    -o-transition-delay: 4100ms;
+    transition-delay: 4100ms;
+    opacity:1;
+}
+.start-development .figure.run .sprints .sprint:nth-child(2) .sprint-title {
+    -webkit-transition-delay: 3900ms;
+    -moz-transition-delay: 3900ms;
+    -ms-transition-delay: 3900ms;
+    -o-transition-delay: 3900ms;
+    transition-delay: 3900ms;
+    /*opacity:1;*/
+}
+.start-development .figure.run .sprints .sprint:nth-child(2) .sprint-finish-caption .caption-pointer {
+    bottom: -24px;
+    animation: pointerHighter2 600ms forwards;
+    -webkit-animation-delay: 4500ms;
+    -moz-animation-delay: 4500ms;
+    -o-animation-delay: 4500ms;
+    animation-delay: 4500ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(2) .sprint-finish-caption .caption-textbox {
+    -webkit-transition-delay: 4900ms;
+    -moz-transition-delay: 4900ms;
+    -ms-transition-delay: 4900ms;
+    -o-transition-delay: 4900ms;
+    transition-delay: 4900ms;
+    opacity:1;
+    width: 200px;
+    max-width: none;
+    margin-right: -100px;
+}
+.start-development .figure .sprints .sprint:nth-child(2) .sprint-progress {
+    background: #7933fa;
+}
+.start-development .figure .sprints .sprint:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 19.8%;
+    width: 32%;
+}
+.start-development .figure.run .sprints .sprint:nth-child(2) .sprint-progress {
+    animation: sprintWidthGrowsUp 300ms forwards;
+    -webkit-animation-delay: 3600ms;
+    -moz-animation-delay: 3600ms;
+    -o-animation-delay: 3600ms;
+    animation-delay: 3600ms;
+}
+@keyframes pointerHighter2 {
+    100% {
+        height: 40px;
+        top: 35px;
+    }
+}
+/* Finish Sprint 2 */
+
+/* Start Sprint 3 */
+.start-development .figure .sprints .sprint:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 51.8%;
+    width: 12%;
+}
+.start-development .figure .sprints .sprint:nth-child(3):after {
+    bottom: -2px;
+    top: auto;
+    -webkit-animation-delay: 5700ms;
+    -moz-animation-delay: 5700ms;
+    -o-animation-delay: 5700ms;
+    animation-delay: 5700ms;
+}
+.start-development .figure .sprints .sprint:nth-child(3) .sprint-progress {
+    background: #e712fa;
+}
+.start-development .figure .sprints .sprint:nth-child(3) .sprint-finish-caption {
+    top: -120px;
+    right: 5px;
+    left: auto;
+    position: absolute;
+}
+.start-development .figure.run .sprints .sprint:nth-child(3) .sprint-description {
+    -webkit-transition-delay: 5500ms;
+    -moz-transition-delay: 5500ms;
+    -ms-transition-delay: 5500ms;
+    -o-transition-delay: 5500ms;
+    transition-delay: 5500ms;
+    opacity:1;
+}
+.start-development .figure.run .sprints .sprint:nth-child(3) .sprint-title {
+    -webkit-transition-delay: 5300ms;
+    -moz-transition-delay: 5300ms;
+    -ms-transition-delay: 5300ms;
+    -o-transition-delay: 5300ms;
+    transition-delay: 5300ms;
+    /*opacity:1;*/
+}
+.start-development .figure.run .sprints .sprint:nth-child(3) .sprint-finish-caption .caption-pointer {
+    bottom: -22px;
+    animation: pointerHighter 600ms forwards;
+    -webkit-animation-delay: 5900ms;
+    -moz-animation-delay: 5900ms;
+    -o-animation-delay: 5900ms;
+    animation-delay: 5900ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(3) .sprint-finish-caption .caption-textbox {
+    -webkit-transition-delay: 5600ms;
+    -moz-transition-delay: 5600ms;
+    -ms-transition-delay: 5600ms;
+    -o-transition-delay: 5600ms;
+    transition-delay: 5600ms;
+    opacity:1;
+    width: 200px;
+    max-width: none;
+    margin-right: -100px;
+}
+.start-development .figure.run .sprints .sprint:nth-child(3) .sprint-progress {
+    animation: sprintWidthGrowsUp 300ms forwards;
+    -webkit-animation-delay: 5000ms;
+    -moz-animation-delay: 5000ms;
+    -o-animation-delay: 5000ms;
+    animation-delay: 5000ms;
+}
+/* Finish Sprint 3 */
+
+/* Start Sprint 4 */
+.start-development .figure .sprints .sprint:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 63.8%;
+    width: 26%;
+}
+.start-development .figure .sprints .sprint:nth-child(4) .sprint-finish-caption {
+    top: -130px;
+}
+.start-development .figure .sprints .sprint:nth-child(4):after {
+    bottom: -2px;
+    top: auto;
+    -webkit-animation-delay: 6700ms;
+    -moz-animation-delay: 6700ms;
+    -o-animation-delay: 6700ms;
+    animation-delay: 6700ms;
+}
+.start-development .figure .sprints .sprint:nth-child(4) .sprint-progress {
+    background: #fa526b;
+}
+.start-development .figure.run .sprints .sprint:nth-child(4) .sprint-description {
+    -webkit-transition-delay: 6500ms;
+    -moz-transition-delay: 6500ms;
+    -ms-transition-delay: 6500ms;
+    -o-transition-delay: 6500ms;
+    transition-delay: 6500ms;
+    opacity:1;
+}
+.start-development .figure.run .sprints .sprint:nth-child(4) .sprint-title {
+    -webkit-transition-delay: 6300ms;
+    -moz-transition-delay: 6300ms;
+    -ms-transition-delay: 6300ms;
+    -o-transition-delay: 6300ms;
+    transition-delay: 6300ms;
+    /*opacity:1;*/
+}
+.start-development .figure.run .sprints .sprint:nth-child(4) .sprint-progress {
+    animation: sprintWidthGrowsUp 300ms forwards;
+    -webkit-animation-delay: 6000ms;
+    -moz-animation-delay: 6000ms;
+    -o-animation-delay: 6000ms;
+    animation-delay: 6000ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(4) .sprint-finish-caption .caption-pointer {
+    bottom: -22px;
+    animation: pointerHighter 600ms forwards;
+    -webkit-animation-delay: 6900ms;
+    -moz-animation-delay: 6900ms;
+    -o-animation-delay: 6900ms;
+    animation-delay: 6900ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(4) .sprint-finish-caption .caption-textbox {
+    -webkit-transition-delay: 7100ms;
+    -moz-transition-delay: 7100ms;
+    -ms-transition-delay: 7100ms;
+    -o-transition-delay: 7100ms;
+    transition-delay: 7100ms;
+    opacity:1;
+    width: 200px;
+    max-width: none;
+    margin-right: -100px;
+}
+/* Finish Sprint 4 */
+
+/* Start Sprint 5 */
+.start-development .figure .sprints .sprint:nth-child(5) .sprint-finish-caption {
+    top: -70px;
+}
+.start-development .figure .sprints .sprint:nth-child(5):after {
+    bottom: -2px;
+    top: auto;
+    -webkit-animation-delay: 7900ms;
+    -moz-animation-delay: 7900ms;
+    -o-animation-delay: 7900ms;
+    animation-delay: 7900ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(5) .sprint-finish-caption .caption-pointer {
+    bottom: -22px;
+    animation: pointerHighter2 600ms forwards;
+    -webkit-animation-delay: 8100ms;
+    -moz-animation-delay: 8100ms;
+    -o-animation-delay: 8100ms;
+    animation-delay: 8100ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(5) .sprint-finish-caption .caption-textbox {
+    -webkit-transition-delay: 8400ms;
+    -moz-transition-delay: 8400ms;
+    -ms-transition-delay: 8400ms;
+    -o-transition-delay: 8400ms;
+    transition-delay: 8400ms;
+    opacity:1;
+    width: 200px;
+    max-width: none;
+    margin-right: -100px;
+}
+.start-development .figure .sprints .sprint:nth-child(5) {
+    position: absolute;
+    bottom: 0;
+    left: 89.8%;
+    width: 10.3%;
+}
+.start-development .figure .sprints .sprint:nth-child(5) .sprint-progress {
+    background: #fae942;
+}
+.start-development .figure.run .sprints .sprint:nth-child(5) .sprint-progress {
+    animation: sprintWidthGrowsUp 300ms forwards;
+    -webkit-animation-delay: 7300ms;
+    -moz-animation-delay: 7300ms;
+    -o-animation-delay: 7300ms;
+    animation-delay: 7300ms;
+}
+.start-development .figure.run .sprints .sprint:nth-child(5) .sprint-description {
+    -webkit-transition-delay: 7700ms;
+    -moz-transition-delay: 7700ms;
+    -ms-transition-delay: 7700ms;
+    -o-transition-delay: 7700ms;
+    transition-delay: 7700ms;
+    opacity:1;
+}
+.start-development .figure.run .sprints .sprint:nth-child(5) .sprint-title {
+    -webkit-transition-delay: 7500ms;
+    -moz-transition-delay: 7500ms;
+    -ms-transition-delay: 7500ms;
+    -o-transition-delay: 7500ms;
+    transition-delay: 7500ms;
+    /*opacity:1;*/
+}
+/* Finish Sprint 5 */
+
+.start-development .figure .sprints .sprint .sprint-title {
+    top: 10px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    font-weight: 300;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+    -webkit-transition-delay: 13200ms;
+    -moz-transition-delay: 13200ms;
+    -ms-transition-delay: 13200ms;
+    -o-transition-delay: 13200ms;
+    transition-delay: 13200ms;
+}
+/*.start-development .figure.run .sprints .sprint .sprint-title {*/
+    /*opacity: 1;*/
+/*}*/
+
+.figure .figure-caption {
+    position: absolute;
+    bottom: -120px;
+    right: 5px;
+    font-weight: 400;
+    font-size: 11px;
+    opacity: 0;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.figure.run .figure-caption {
+    opacity: 1;
+}

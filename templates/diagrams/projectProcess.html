@@ -1,0 +1,148 @@
+<div class="figure project-process" [ngClass]="{'run': run  }">
+    <div class="figure-header text-center" (click)="start()" *ngIf="!run">
+        <div>Projecting in</div>
+        <div class="tenSeconds">15</div>
+        <div>seconds</div>
+    </div>
+    <button class="btn btn-success" (click)="repeat()" *ngIf="run">
+        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+    </button>
+
+    <div class="figure-content" *ngIf="run">
+
+        <div class="tetris-game-container">
+<!--            <h4>Formed project</h4>-->
+
+            <div class="tetris-game">
+                <div class="tetris-block tt-fg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="tetris-boot tt-fg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="tetris-zigzag tt-fg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="tetris-line tt-fg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="tetris-line tt-fg second">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="tetris-triangle flipX tt-fg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="tetris-triangle tt-fg second rotate">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="tetris-final">
+                <typeit [strings]="['<h2>Project is ready!</h2>']" [delay]="21000" [duration]="20"></typeit>
+            </div>
+        </div>
+
+        <div class="tetris-figures-container">
+            <div class="tetris-figures">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Main principles</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="tetris-figure first">
+                            <div class="fig">
+                                <div class="tetris-block tt-fg tt-sm">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="caption">Db scheme</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="tetris-figure second">
+                            <div class="fig">
+                                <div class="tetris-boot tt-fg tt-sm">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="caption">Backend scheme</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="tetris-figure third">
+                            <div class="fig">
+                                <div class="tetris-triangle tt-fg tt-sm">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="caption">Workers tasks</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="tetris-figure fourth">
+                            <div class="fig">
+                                <div class="tetris-line tt-fg tt-sm">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="caption">Work schedule</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="tetris-figure fifth">
+                            <div class="fig">
+                                <div class="tetris-zigzag tt-fg tt-sm">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="caption">Frontend scheme</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

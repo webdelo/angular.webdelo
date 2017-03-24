@@ -1,0 +1,809 @@
+.figure.project-process {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -400px;
+    width: 500px;
+    height: 400px;
+}
+
+.figure.project-process .btn {
+    position: absolute;
+    top: 8%;
+    height: 40px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    text-align: center;
+    z-index: 6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: fadeIn 400ms 23s forwards;
+    -o-animation: fadeIn 400ms 23s forwards;
+    animation: fadeIn 400ms 23s forwards;
+}
+
+.figure.project-process .figure-header {
+    top: 50px;
+    left: 200px;
+}
+
+.tetris-game-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+}
+.tetris-game {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -66px;
+    margin-top: -106px;
+    width: 132px;
+    height: 213px;
+    overflow: hidden;
+    -webkit-box-shadow: inset 0 6px 3px -8px #333333;
+    -moz-box-shadow: inset 0 6px 3px -8px #333333;
+    box-shadow: inset 0 6px 3px -8px #333333;
+}
+.tetris-game-container h4 {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    opacity: 0;
+    -webkit-animation: fadeIn 1s 22ms forwards;
+    -o-animation: fadeIn 1s 22ms forwards;
+    animation: fadeIn 1s 22s forwards;
+}
+
+.tetris-game-container .tetris-final {
+    position: absolute;
+    left: 190px;
+    top: 50%;
+    width: 300px;
+    margin-top: -16px;
+    color: #252525;
+}
+
+.tetris-game-container .tetris-final h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    /*-webkit-animation: finalColors 3s infinite;*/
+    /*-o-animation: finalColors 3s infinite;*/
+    /*animation: finalColors 3s infinite;*/
+}
+@keyframes finalColors {
+    50% {
+        color: #36884B;
+    }
+    100% {
+        color: #252525;
+    }
+}
+
+.tetris-final .typed-cursor {
+    font-size: 23px;
+}
+
+
+.tetris-figures-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:70%;
+    height: 100%;
+}
+.tetris-figures {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -125px;
+    height: 220px;
+    width: 250px;
+
+}
+
+.tetris-figures h4 {
+    text-align: center;
+    font-weight: 400;
+    opacity: 0;
+}
+
+.figure.run .tetris-figures h4 {
+    -webkit-animation: fadeIn 200ms 500ms forwards;
+    -o-animation: fadeIn 200ms 500ms forwards;
+    animation: fadeIn 200ms 500ms forwards;
+}
+
+.tetris-figures .tetris-figure {
+    position: relative;
+    margin-top: 15px;
+    opacity: 0;
+}
+
+.tetris-figures .tetris-figure .fig {
+    display: inline-block;
+}
+.tetris-figures .tetris-figure .caption {
+    position: absolute;
+    left: 30px;
+    line-height: 14px;
+    top: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.tetris-figures .tetris-figure.first {
+    -webkit-animation: fadeIn 200ms 1s forwards;
+    -o-animation: fadeIn 200ms 1s forwards;
+    animation: fadeIn 200ms 1s forwards;
+}
+.tetris-figures .tetris-figure.second {
+    -webkit-animation: fadeIn 200ms 4s forwards;
+    -o-animation: fadeIn 200ms 4s forwards;
+    animation: fadeIn 200ms 4s forwards;
+}
+.tetris-figures .tetris-figure.third {
+    -webkit-animation: fadeIn 200ms 7s forwards;
+    -o-animation: fadeIn 200ms 7s forwards;
+    animation: fadeIn 200ms 7s forwards;
+}
+.tetris-figures .tetris-figure.fourth {
+    -webkit-animation: fadeIn 200ms 10s forwards;
+    -o-animation: fadeIn 200ms 10s forwards;
+    animation: fadeIn 200ms 10s forwards;
+}
+.tetris-figures .tetris-figure.fifth {
+    -webkit-animation: fadeIn 200ms 13s forwards;
+    -o-animation: fadeIn 200ms 13s forwards;
+    animation: fadeIn 200ms 13s forwards;
+}
+
+.tetris-figures .tetris-line.tt-sm {
+    top: -5px;
+}
+
+
+.tt-fg {
+    position: relative;
+}
+.tt-fg div {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #8c8c8c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-box-shadow: 0 0 2px #808080;
+    -moz-box-shadow: 0 0 2px #808080;
+    box-shadow: 0 0 2px #808080;
+}
+.tt-fg.tt-sm div {
+    width: 10px;
+    height: 10px;
+}
+
+/* Start tetris boot */
+.tetris-boot {
+    width: 53px;
+    height: 81px;
+    /*background: rgba(200, 200, 200, 0.5);*/
+}
+.tt-fg.tetris-boot div:nth-child(1) {
+    bottom: 0;
+    right: 0;
+}
+.tt-fg.tetris-boot div:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+.tt-fg.tetris-boot div:nth-child(3) {
+    top: 28px;
+    left: 0;
+}
+.tt-fg.tetris-boot div:nth-child(4) {
+    top: 56px;
+    left: 0;
+}
+.tt-fg.tetris-boot div {
+    background: #e02626;
+}
+
+.tt-fg.tetris-boot.tt-sm {
+    height: 32px;
+    width: 21px;
+}
+.tt-fg.tetris-boot.tt-sm div:nth-child(1) {
+    top: 0;
+    left: 0;
+    right: auto;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 4500ms forwards;
+    -o-animation: fadeIn 100ms 4500ms forwards;
+    animation: fadeIn 100ms 4500ms forwards;
+}
+.tt-fg.tetris-boot.tt-sm div:nth-child(2) {
+    top: 11px;
+    left: 0;
+    right: auto;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 4600ms forwards;
+    -o-animation: fadeIn 100ms 4600ms forwards;
+    animation: fadeIn 100ms 4600ms forwards;
+}
+.tt-fg.tetris-boot.tt-sm div:nth-child(3) {
+    top: 22px;
+    left: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 4700ms forwards;
+    -o-animation: fadeIn 100ms 4700ms forwards;
+    animation: fadeIn 100ms 4700ms forwards;
+}
+.tt-fg.tetris-boot.tt-sm div:nth-child(4) {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 4800ms forwards;
+    -o-animation: fadeIn 100ms 4800ms forwards;
+    animation: fadeIn 100ms 4800ms forwards;
+}
+/* Finish tetris boot */
+
+/* Start tetris zigzag */
+.tetris-zigzag {
+    width: 53px;
+    height: 81px;
+    /*background: rgba(200, 200, 200, 0.5);*/
+}
+.tt-fg.tetris-zigzag div:nth-child(1) {
+    bottom: 0;
+    right: 0;
+}
+.tt-fg.tetris-zigzag div:nth-child(2) {
+    bottom: 28px;
+    left: 0;
+}
+.tt-fg.tetris-zigzag div:nth-child(3) {
+    top: 28px;
+    right: 0;
+}
+.tt-fg.tetris-zigzag div:nth-child(4) {
+    top: 0;
+    left: 0;
+}
+.tt-fg.tetris-zigzag div {
+    background: #337CA3;
+}
+
+.tt-fg.tetris-zigzag.tt-sm {
+    height: 33px;
+    width: 21px;
+}
+.tt-fg.tetris-zigzag.tt-sm div:nth-child(1) {
+    top: 0;
+    left: 0;
+    right: auto;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 13500ms forwards;
+    -o-animation: fadeIn 100ms 13500ms forwards;
+    animation: fadeIn 100ms 13500ms forwards;
+}
+.tt-fg.tetris-zigzag.tt-sm div:nth-child(2) {
+    top: 11px;
+    left: 0;
+    right: auto;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 13600ms forwards;
+    -o-animation: fadeIn 100ms 13600ms forwards;
+    animation: fadeIn 100ms 13600ms forwards;
+}
+.tt-fg.tetris-zigzag.tt-sm div:nth-child(3) {
+    top: 11px;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 13700ms forwards;
+    -o-animation: fadeIn 100ms 13700ms forwards;
+    animation: fadeIn 100ms 13700ms forwards;
+}
+.tt-fg.tetris-zigzag.tt-sm div:nth-child(4) {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 13800ms forwards;
+    -o-animation: fadeIn 100ms 13800ms forwards;
+    animation: fadeIn 100ms 13800ms forwards;
+}
+/* Finish tetris zigzag */
+
+/* Start tetris block */
+.tetris-block {
+    width: 53px;
+    height: 53px;
+    /*background: rgba(200, 200, 200, 0.5);*/
+}
+.tt-fg.tetris-block div:nth-child(1) {
+    bottom: 0;
+    right: 0;
+}
+.tt-fg.tetris-block div:nth-child(2) {
+    bottom: 0;
+    left: 0;
+}
+.tt-fg.tetris-block div:nth-child(3) {
+    top: 0;
+    right: 0;
+}
+.tt-fg.tetris-block div:nth-child(4) {
+    top: 0;
+    left: 0;
+}
+.tt-fg.tetris-block div {
+    background: #36884B;
+}
+
+.tt-fg.tetris-block.tt-sm {
+    height: 21px;
+    width: 21px;
+}
+.tt-fg.tetris-block.tt-sm div:nth-child(1) {
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 1500ms forwards;
+    -o-animation: fadeIn 100ms 1500ms forwards;
+    animation: fadeIn 100ms 1500ms forwards;
+}
+.tt-fg.tetris-block.tt-sm div:nth-child(2) {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 1600ms forwards;
+    -o-animation: fadeIn 100ms 1600ms forwards;
+    animation: fadeIn 100ms 1600ms forwards;
+}
+.tt-fg.tetris-block.tt-sm div:nth-child(3) {
+    top: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 1700ms forwards;
+    -o-animation: fadeIn 100ms 1700ms forwards;
+    animation: fadeIn 100ms 1700ms forwards;
+}
+.tt-fg.tetris-block.tt-sm div:nth-child(4) {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 1800ms forwards;
+    -o-animation: fadeIn 100ms 1800ms forwards;
+    animation: fadeIn 100ms 1800ms forwards;
+}
+/* Finish tetris boot */
+
+/* Start tetris line */
+.tetris-line {
+    width: 25px;
+    height: 109px;
+    /*background: rgba(200, 200, 200, 0.5);*/
+}
+.tt-fg.tetris-line div:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+.tt-fg.tetris-line div:nth-child(2) {
+    top: 28px;
+    left: 0;
+}
+.tt-fg.tetris-line div:nth-child(3) {
+    top: 56px;
+    left: 0;
+}
+.tt-fg.tetris-line div:nth-child(4) {
+    top: 84px;
+    left: 0;
+}
+.tt-fg.tetris-line div {
+    background: #b02ac3;
+}
+
+.tt-fg.tetris-line.tt-sm {
+    height: 55px;
+    width: 21px;
+}
+.tt-fg.tetris-line.tt-sm div:nth-child(1) {
+    top: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 10500ms forwards;
+    -o-animation: fadeIn 100ms 10500ms forwards;
+    animation: fadeIn 100ms 10500ms forwards;
+}
+.tt-fg.tetris-line.tt-sm div:nth-child(2) {
+    top: 11px;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 10600ms forwards;
+    -o-animation: fadeIn 100ms 10600ms forwards;
+    animation: fadeIn 100ms 10600ms forwards;
+}
+.tt-fg.tetris-line.tt-sm div:nth-child(3) {
+    top: 22px;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 10700ms forwards;
+    -o-animation: fadeIn 100ms 10700ms forwards;
+    animation: fadeIn 100ms 10700ms forwards;
+}
+.tt-fg.tetris-line.tt-sm div:nth-child(4) {
+    top: 33px;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 10800ms forwards;
+    -o-animation: fadeIn 100ms 10800ms forwards;
+    animation: fadeIn 100ms 10800ms forwards;
+}
+/* Finish tetris line */
+
+/* Start tetris triangle */
+.tetris-triangle {
+    width: 53px;
+    height: 81px;
+    /*background: rgba(200, 200, 200, 0.5);*/
+}
+.tetris-triangle.rotate {
+    width: 81px;
+    height: 53px;
+}
+.tt-fg.tetris-triangle div:nth-child(1) {
+    top: 0;
+    right: 0;
+}
+.tt-fg.tetris-triangle div:nth-child(2) {
+    top: 28px;
+    right: 0;
+}
+.tt-fg.tetris-triangle div:nth-child(3) {
+    top: 56px;
+    right: 0;
+}
+.tt-fg.tetris-triangle div:nth-child(4) {
+    top: 28px;
+    left: 0;
+}
+.tt-fg.tetris-triangle div {
+    background: #e89d1e;
+}
+
+.tt-fg.tetris-triangle.tt-sm {
+    height: 33px;
+    width: 21px;
+}
+.tt-fg.tetris-triangle.tt-sm div:nth-child(1) {
+    top: 0px;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 7500ms forwards;
+    -o-animation: fadeIn 100ms 7500ms forwards;
+    animation: fadeIn 100ms 7500ms forwards;
+}
+.tt-fg.tetris-triangle.tt-sm div:nth-child(2) {
+    top: 11px;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 7600ms forwards;
+    -o-animation: fadeIn 100ms 7600ms forwards;
+    animation: fadeIn 100ms 7600ms forwards;
+}
+.tt-fg.tetris-triangle.tt-sm div:nth-child(3) {
+    top: 22px;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 7700ms forwards;
+    -o-animation: fadeIn 100ms 7700ms forwards;
+    animation: fadeIn 100ms 7700ms forwards;
+}
+.tt-fg.tetris-triangle.tt-sm div:nth-child(4) {
+    top: 11px;
+    opacity: 0;
+    -webkit-animation: fadeIn 100ms 7800ms forwards;
+    -o-animation: fadeIn 100ms 7800ms forwards;
+    animation: fadeIn 100ms 7800ms forwards;
+}
+
+.tt-fg.tetris-triangle.flipX div:nth-child(1) {
+    left: 0;
+    right: auto;
+}
+.tt-fg.tetris-triangle.flipX div:nth-child(2) {
+    left: 0;
+    right: auto;
+}
+.tt-fg.tetris-triangle.flipX div:nth-child(3) {
+    left: 0;
+    right: auto;
+}
+.tt-fg.tetris-triangle.flipX div:nth-child(4) {
+    right: 0;
+    left: auto;
+}
+
+.tt-fg.tetris-triangle.rotate div:nth-child(1) {
+    top: 0;
+    left: 0;
+    right: auto;
+}
+.tt-fg.tetris-triangle.rotate div:nth-child(2) {
+    left: 28px;
+    top: 0;
+    bottom: auto;
+    right: auto;
+}
+.tt-fg.tetris-triangle.rotate div:nth-child(3) {
+    left: 56px;
+    top: 0;
+    right: auto;
+}
+.tt-fg.tetris-triangle.rotate div:nth-child(4) {
+    left: 28px;
+    bottom: 0;
+    right: auto;
+}
+
+.tt-fg.tetris-triangle.rotate.tt-sm {
+    width: 33px;
+    height: 21px;
+}
+.tt-fg.tetris-triangle.rotate.tt-sm div:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+.tt-fg.tetris-triangle.rotate.tt-sm div:nth-child(2) {
+    top: 0;
+    left: 11px;
+}
+.tt-fg.tetris-triangle.rotate.tt-sm div:nth-child(3) {
+    left: 22px;
+    top: 0;
+}
+.tt-fg.tetris-triangle.rotate.tt-sm div:nth-child(4) {
+    left: 11px;
+    bottom: 0;
+}
+
+/* Finish tetris triangle */
+
+
+
+/* Start Positioning in game */
+.tetris-game .tetris-block {
+    position: absolute;
+    left: 38px;
+    top: -120px;
+}
+.tetris-game .tetris-boot {
+    position: absolute;
+    left: 38px;
+    top: -120px;
+}
+.tetris-game .tetris-zigzag {
+    position: absolute;
+    left: 38px;
+    top: -120px;
+}
+.tetris-game .tetris-triangle {
+    position: absolute;
+    left: 38px;
+    top: -120px;
+}
+.tetris-game .tetris-triangle.second {
+    position: absolute;
+    left: 22px;
+    top: -120px;
+}
+.tetris-game .tetris-line {
+    position: absolute;
+    left: 50px;
+    top: -120px;
+}
+.tetris-game .tetris-line.second {
+    position: absolute;
+    left: 50px;
+    top: -120px;
+}
+
+
+
+.figure.run .tetris-game .tetris-block {
+    -webkit-animation: blockDownIn 2s 2s forwards;
+    -o-animation: blockDownIn 2s 2s forwards;
+    animation: blockDownIn 2s 2s forwards;
+
+}
+@keyframes blockDownIn {
+    100% {
+        left: 66px;
+        top: 150px;
+    }
+}
+
+.figure.run .tetris-game .tetris-boot {
+    -webkit-animation: bootDownIn 2s 5s forwards cubic-bezier(.41,.92,.83,.41);
+    -o-animation: bootDownIn 2s 5s forwards cubic-bezier(.41,.92,.83,.41);
+    animation: bootDownIn 2s 5s forwards cubic-bezier(.41,.92,.83,.41);
+}
+@keyframes bootDownIn {
+    1% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    39% {
+        left: 20px;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    41% {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    51% {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    53% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 10px;
+        top: 122px;
+    }
+}
+
+.figure.run .tetris-game .tetris-triangle {
+    -webkit-animation: triangleDownIn 2s 8s forwards cubic-bezier(.41,.92,.83,.41);
+    -o-animation: triangleDownIn 2s 8s forwards cubic-bezier(.41,.92,.83,.41);
+    animation: triangleDownIn 2s 8s forwards cubic-bezier(.41,.92,.83,.41);
+}
+@keyframes triangleDownIn {
+    1% {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    35% {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+   37% {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    50% {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    52% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 38px;
+        top: 94px;
+    }
+}
+
+.figure.run .tetris-game .tetris-line {
+    -webkit-animation: lineDownIn 2s 11s forwards cubic-bezier(1,.71,.65,.22);
+    -o-animation: lineDownIn 2s 11s forwards cubic-bezier(1,.71,.65,.22);
+    animation: lineDownIn 2s 11s forwards cubic-bezier(1,.71,.65,.22);
+}
+@keyframes lineDownIn {
+    40% {
+        left: 94px;
+    }
+    100% {
+        left: 94px;
+        top: 38px;
+    }
+}
+
+.figure.run .tetris-game .tetris-zigzag {
+    -webkit-animation: zigzagDownIn 2s 14s forwards cubic-bezier(.41,.92,.83,.41);
+    -o-animation: zigzagDownIn 2s 14s forwards cubic-bezier(.41,.92,.83,.41);
+    animation: zigzagDownIn 2s 14s forwards cubic-bezier(.41,.92,.83,.41);
+}
+@keyframes zigzagDownIn {
+    1% {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    50% {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    51% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 38px;
+        top: 38px;
+    }
+}
+
+
+.figure.run .tetris-game .tetris-line.second {
+    -webkit-animation: line2DownIn 2s 16s forwards cubic-bezier(1,.71,.65,.22);
+    -o-animation: line2DownIn 2s 16s forwards cubic-bezier(1,.71,.65,.22);
+    animation: line2DownIn 2s 16s forwards cubic-bezier(1,.71,.65,.22);
+}
+@keyframes line2DownIn {
+    25% {
+        left: 10px;
+    }
+    100% {
+        left: 10px;
+        top: 10px;
+    }
+}
+
+.figure.run .tetris-game .tetris-triangle.second {
+    -webkit-animation: triangle2DownIn 2s 17s forwards cubic-bezier(1,.71,.65,.22);
+    -o-animation: triangle2DownIn 2s 17s forwards cubic-bezier(1,.71,.65,.22);
+    animation: triangle2DownIn 2s 17s forwards cubic-bezier(1,.71,.65,.22);
+}
+@keyframes triangle2DownIn {
+    50% {
+        left: 38px;
+    }
+    100% {
+        left: 38px;
+        top: 10px;
+    }
+}
+/* Finish Positioning in game */

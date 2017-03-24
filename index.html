@@ -1,0 +1,76 @@
+<html>
+<head>
+    <base href="/">
+    <title>Loading...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+    <!-- Polyfill for older browsers -->
+    <script src="/node_modules/core-js/client/shim.min.js"></script>
+    <script src="/node_modules/zone.js/dist/zone.js"></script>
+    <script src="/node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="/node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="/node_modules/animate.css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/spinners.css">
+    <link rel="stylesheet" href="/node_modules/ng2-dnd/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--<link href="node_modules/@angular/material/core/theming/prebuilt/indigo-pink.css" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="/node_modules/fullpage.js/dist/jquery.fullpage.css" />
+    <link rel="stylesheet" href="/src/css/custom.css">
+    <link rel="stylesheet" href="/src/css/landing/howDoWeWork.css">
+
+    <script src="/node_modules/wowjs/dist/wow.js"></script>
+    <script src="/node_modules/countup.js/dist/countUp.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script type="text/javascript" src="/node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="/node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="/node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script src="/node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+</head>
+<!-- 3. Display the application -->
+<body>
+<index-app>
+    <div class="full-page-text">
+        <div class="loader-container circle-pulse-multiple">
+            <div class="loader">
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
+            </div>
+        </div>
+    </div>
+</index-app>
+
+<!-- jQuery -->
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

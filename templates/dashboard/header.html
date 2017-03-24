@@ -1,0 +1,42 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container wow fadeInDown" data-wow-delay="6s">
+        <div class="navbar-header">
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Branding Image -->
+            <a class="navbar-brand" routerLink="/">
+                <span class="logo">
+                    <img src="/src/img/logo/logo.svg" alt="" style="width: 200px; height: 50px;">
+                </span>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="app-navbar-collapse" *ngIf="user.profile">
+            <!-- Left Side Of Navbar -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#welcome">Home</a>
+                </li>
+                <li>
+                    <a href="#howDoWeWork">How do we work</a>
+                </li>
+                <li>
+                    <a href="#technologies">Technologies</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#whoWeAre">Who we are</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

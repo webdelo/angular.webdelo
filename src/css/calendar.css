@@ -1,0 +1,96 @@
+.page-header {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.calendarHeading {
+    font-size: 40px;
+    color: #6f6f6f;
+    font-weight: 200;
+    margin: 0 5px;
+}
+
+.months h3.monthName span {
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.months h3.monthName {
+    font-weight: 300;
+    font-size: 30px;
+    color: #3f3f3f;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.days {
+    height: 200px;
+    position: relative;
+    border: 1px solid #ececec;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding-top: 50px;
+    cursor: pointer;
+    transition:  800ms;
+}
+
+.days:hover {
+    background: #fafafa;
+}
+.days:active {
+    background: #1dc5ff;
+}
+
+.days .dayNumber {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 38px;
+    color: #525252;
+    text-align: right;
+}
+
+.days h4 {
+    font-weight: 300;
+}
+.days h5 {
+    font-weight: 400;
+}
+
+.days .notAssignedLabel {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.days .dayControls {
+    position: absolute;
+    left: 10px;
+    top: 17px;
+}
+
+.days:hover .indicator-primary {
+    animation: primary-background-change 1s infinite;
+}
+.days:hover .indicator-success {
+    animation: success-background-change 1s infinite;
+}
+.days:hover .indicator-warning {
+    animation: warning-background-change 1s infinite;
+}
+.days:hover .indicator-info {
+    animation: info-background-change 1s infinite;
+}
+.days:hover .indicator-danger {
+    animation: danger-background-change 1s infinite;
+}
+
+@media only screen and (max-width: 600px) {
+    .months .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}

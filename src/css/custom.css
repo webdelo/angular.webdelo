@@ -1,0 +1,753 @@
+
+
+
+a {
+    cursor: pointer;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small {
+    font-size: 55%;
+}
+
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+    font-weight: 200;
+    line-height: 1;
+    color: #434343;
+}
+
+.fp-tableCell {
+    display: block;
+}
+
+body {
+    font-weight: 300 !important;
+    /*background: #919191;*/
+
+}
+table td {
+    font-weight: 300 !important;
+}
+
+.full-page-text {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.full-page-loading {
+    height: 600px;
+    padding-top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.full-page-loading h1 {
+    font-size: 22px;
+}
+
+.sign-in-form label{
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+
+.sign-in-form .checkbox {
+    line-height: 20px;
+}
+
+.divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.sign-in-form .form-group {
+    margin-bottom: 0px;
+}
+
+.sign-in-form .alert {
+    padding: 0;
+    margin-top: 5px;
+}
+
+.signed-in, .sign-in-form {
+    border: 1px solid;
+    background-color: #444444;
+    padding-bottom: 10px;
+}
+
+.signed-in h4.name,
+.sign-in-form h4.name
+{
+    color: #ffffff;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.signed-in .logout {
+    background-color: #c09b7d;
+}
+.signed-in .logout a {
+    color: #d04c2f;
+    cursor: pointer;
+}
+
+.additional {
+    font-size: 11px;
+    color: #5f5f5f;
+}
+
+
+.notAssignedLabel {
+    color: #828282;
+    font-size: 18px;
+}
+
+.unauthorized .sign-in-form {
+    background-color: #ffffff;
+    color: #404040;
+    border: none;
+    padding-top: 20px;
+}
+
+.unauthorized .sign-in-form .name {
+    display: none;
+}
+.unauthorized .sign-in-form label {
+    text-align: left;
+    color: #575757;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+.unauthorized h4  {
+    text-align: left;
+}
+
+.loading {
+    font-weight: 100;
+}
+
+.page-header .pageHeading {
+    font-size: 40px;
+    color: #6f6f6f;
+    font-weight: 200;
+    line-height: 55px;
+}
+
+.page-header .pageHeading strong {
+    font-weight: 300;
+}
+
+.discourse .speech h2 {
+    font-weight: 200;
+}
+
+.discourse .speaker h2 {
+    font-weight: 300;
+}
+
+.page-header .btn {
+    line-height: 59px;
+    margin-top: 10px;
+    height: 60px;
+    width: auto;
+    padding: 0 15px;
+}
+
+.page-header .mobile-buttons .btn {
+    line-height: 41px;
+    margin-top: -6px;
+    height: 42px;
+    width: auto;
+    padding: 0 15px;
+}
+
+.page-header .mobile-buttons .btn .glyphicon {
+    line-height: 37px;
+}
+
+.page-header .btn .glyphicon {
+    line-height: 57px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #eee;
+    font-weight: 100;
+}
+
+.dropdown-menu {
+    border: 1px solid rgba(230, 230, 230, 0.25);
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.1);
+    box-shadow: 0 1px 6px rgba(0,0,0,.1);
+}
+
+.btn {
+    transition: 300ms;
+}
+
+.btn-primary {
+    color: #0082a1;
+    background-color: #fff;
+    border-color: #009dc0;
+    font-weight: 100;
+}
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover,
+.btn-primary:hover {
+    background-color: #009dc0;
+    color: #ffffff;
+    border-color: #009dc0;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+    background-color: #008aa9;
+    color: #ffffff;
+    border-color: #007c98;
+}
+
+.btn-success {
+    color: #24813f;
+    background-color: #fff;
+    border-color: #48c457;
+    font-weight: 100;
+}
+
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success:active.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover,
+.btn-success:hover {
+    background-color: #48c457;
+    color: #ffffff;
+    border-color: #48c457;
+}
+
+.btn-success.active,
+.btn-success:active,
+.open>.dropdown-toggle.btn-success {
+    background-color: #48c457;
+    color: #ffffff;
+    border-color: #48c457;
+}
+
+.btn-danger {
+    color: #751101;
+    background-color: #fff;
+    border-color: #c06948;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-header {
+        margin: 0;
+    }
+    .navbar-header {
+        padding-left: 5px;
+    }
+}
+
+.control-buttons .btn {
+    margin-top: 9px;
+}
+
+.navbar-default {
+    background-color: #fbfbfb;
+    border-color: #fbfbfb;
+}
+
+.controls {
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+.controls .navbar-text {
+    padding-left: 0;
+    margin-left: 0;
+    font-weight: 100;
+}
+
+.discourseContainer {
+    height: 260px;
+    margin-top: 30px;
+}
+
+.discourseContainer .speech {
+    height: 96px;
+}
+
+.discourseNavigatorButton {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.discourseNavigatorButton .glyphicon.glyphicon-menu-left {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -3px;
+    opacity: .3;
+    font-size: 20px;
+}
+.discourseNavigatorButton .glyphicon.glyphicon-menu-right {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -3px;
+    opacity: .3;
+    font-size: 20px;
+}
+
+.discourseNavigatorButton .date {
+    font-weight: 200;
+    display: block;
+}
+.discourseNavigatorButton .date strong {
+    font-weight: 300;
+}
+
+.discourseNavigatorButton .speech {
+    white-space: initial;
+    height: 57px;
+}
+
+.discourseNavigatorButton .notAssigned .speech,
+.discourseNavigatorButton .notAssigned .speaker
+{
+    font-style: italic;
+}
+
+.label {
+    font-weight: 300;
+}
+
+.status-primary {
+    color: #055584 !important;
+}
+.status-info {
+    color: #0088ac !important;
+}
+.status-success {
+    color: #24813f !important;
+}
+.status-warning {
+    color: #c09358 !important;
+}
+.status-danger {
+    color: #c0684f !important;
+}
+
+/*pagination  start*/
+.itemsPerPage{
+    display: inline-block;
+    width: 10%;
+}
+
+.adminPagination{
+    display: inline-block;
+}
+
+.adminPagination ul li {
+    font-size: 20px !important;
+}
+/*pagination end*/
+
+.assign-from-content {
+    transition: 300ms;
+    height: 260px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.assign-from-content .text-info {
+    transition: 1000ms;
+    color: #696969;
+}
+
+.assign-from-content:hover {
+    background-color: #fcfcfc;
+    cursor: pointer;
+}
+.assign-from-content:hover .text-info{
+    color: #2aa9cb;
+}
+
+/*!
+ * Copyright (C) 2016 Sergey Akopkokhyants
+ * This project is licensed under the terms of the MIT license.
+ * https://github.com/akserg/ng2-slim-loading-bar
+ */
+
+
+/* Styling for the Slim Loading Progress Bar container */
+.slim-loading-bar {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+/* Styling for the Slim Loading Progress Bar itself */
+.slim-loading-bar-progress {
+    margin: 0;
+    padding: 0;
+    z-index: 99998;
+    background-color: green;
+    color: green;
+    box-shadow: 0 0 10px 0; /* Inherits the font color */
+    height: 2px;
+    /* Add CSS3 styles for transition smoothing */
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.speech-new,
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.speaker-search-results .speech-new {
+    position: absolute;
+    left: 0px;
+    top: 6px;
+}
+
+.indicator-success {
+    background-color: #5ecb44;
+}
+.indicator-success-animated {
+    animation: success-background-change 2s infinite;
+}
+
+.indicator-primary {
+    background-color: #2ea0f5;
+}
+.indicator-primary-animated {
+    animation: primary-background-change 2s infinite;
+}
+
+.indicator-warning {
+    background-color: #f9bc6c;
+}
+.indicator-warning-animated {
+    animation: warning-background-change 2s infinite;
+}
+
+.indicator-info {
+    background-color: #6eeae7;
+}
+.indicator-info-animated {
+    animation: info-background-change 2s infinite;
+}
+
+.indicator-danger {
+    background-color: #ff6f5b;
+}
+.indicator-danger-animated {
+    animation: danger-background-change 500ms infinite;
+}
+
+@keyframes success-background-change {
+    /* You could think of as "step 1" */
+    0% {
+        background: #5ecb44;
+    }
+    /* You could think of as "step 1" */
+    50% {
+        background: #13720f;
+    }
+    /* You could think of as "step 2" */
+    100% {
+        background: #5ecb44;
+    }
+}
+@keyframes primary-background-change {
+    /* You could think of as "step 1" */
+    0% {
+        background: #2ea0f5;
+    }
+    50% {
+        background: #245ec6;
+    }
+    /* You could think of as "step 2" */
+    100% {
+        background: #2ea0f5;
+    }
+}
+@keyframes warning-background-change {
+    /* You could think of as "step 1" */
+    0% {
+        background: #f9bc6c;
+    }
+    50% {
+        background: #b2864f;
+    }
+    /* You could think of as "step 2" */
+    100% {
+        background: #f9bc6c;
+    }
+}
+@keyframes info-background-change {
+    /* You could think of as "step 1" */
+    0% {
+        background: #6eeae7;
+    }
+    50% {
+        background: #49a6a4;
+    }
+    /* You could think of as "step 2" */
+    100% {
+        background: #6eeae7;
+    }
+}
+@keyframes danger-background-change {
+    /* You could think of as "step 1" */
+    0% {
+        background: #ff6f5b;
+    }
+    50% {
+        background: #ff0311;
+    }
+    /* You could think of as "step 2" */
+    100% {
+        background: #ff6f5b;
+    }
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2aa9cb;
+    /*animation: logo-animate 10s infinite;*/
+}
+.logo span {
+    color: #989898;
+    font-weight: 400;
+}
+
+.loading {
+    color: #2aa9cb;
+    animation: loading-animate 5s infinite;
+}
+
+@keyframes loading-animate {
+    0% {
+        color: #2aa9cb;
+    }
+    20% {
+        color: #5dcb7b;
+    }
+    40% {
+        color: #cb9168;
+    }
+    60% {
+        color: #cb839d;
+    }
+    80% {
+        color: #ad9ccb;
+    }
+    100% {
+        color: #2aa9cb;
+    }
+}
+
+
+.index .login-form .sign-in-form {
+    background: none;
+    border: none;
+    margin-top: 30px;
+}
+
+.index .login-form .sign-in-form h4.name {
+    display: none;
+}
+.index .login-form .sign-in-form .form-group label {
+    display: none;
+}
+.index .login-form .sign-in-form .checkbox {
+    display: none;
+}
+.index .login-form .sign-in-form .form-group label {
+    display: none;
+}
+
+.index .login-form .sign-in-form .form-group {
+    padding: 10px;
+}
+
+.index .login-form .sign-in-form .form-group input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #009dc0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 22px;
+    font-weight: 100;
+    color: #009dc0;
+}
+
+.index .login-form .sign-in-form .btn-primary {
+    margin-top: 30px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+.circle-pulse-multiple .loader {
+    width: 250px;
+    height: 250px;
+}
+
+.text-accent {
+    color: #2fa8cb;
+}
+
+.services .fa {
+    color: #737373;
+}
+
+.services .fa.text-primary {
+    color: #ffffff;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-lg {
+    font-size: 5.2em;
+    font-weight: 100;
+}
+
+
+.figure .figure-header {
+    cursor: pointer;
+    position: absolute;
+    top: -160px;
+    right: 300px;
+    left: 50%;
+    padding-top: 26px;
+    margin-left: -75px;
+    height: 150px;
+    width: 150px;
+    background: #009fe3;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 16px;
+    z-index: 10;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    -webkit-animation: pulsateCircle 1.75s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    -o-animation: pulsateCircle 1.75s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+    animation: pulsateCircle 1.75s infinite cubic-bezier(0.46,0.53,0.51,1.01);
+}
+.figure .figure-header:hover {
+    background: #d6bd2f;
+}
+
+@keyframes pulsateCircle {
+    0% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+    50% {
+        box-shadow: 0px 0px 0px 20px rgba(0, 178, 248, 0.19);
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+}
+
+.tenSeconds {
+    font-size: 60px;
+    font-weight: 100;
+    margin: -10px 0;
+    padding: 0;
+}
+
+.figure .timer {
+    position: absolute;
+    top: -260px;
+    right: 30px;
+    font-size: 22px;
+    padding-top: 10px;
+    height: 100px;
+    width: 100px;
+    background: #ffffff;
+}
+
+.figure .timer .tenSeconds {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 5px 0;
+}

@@ -1,0 +1,105 @@
+<div class="figure developing-process" [ngClass]="{'run': run}">
+<!--    <div class="figure-header text-center" (click)="start()" *ngIf="!run">-->
+<!--        <div>Development in</div>-->
+<!--        <div class="tenSeconds">10</div>-->
+<!--        <div>seconds</div>-->
+<!--    </div>-->
+    <button class="btn btn-success" (click)="repeat()" *ngIf="run">
+        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+    </button>
+
+
+    <div class="timeline-shadow"></div>
+    <div class="timeline"></div>
+    <div class="sprints">
+        <div class="sprint">
+            <div class="sprint-progress"></div>
+            <div class="sprint-finish-caption">
+                <div class="caption-textbox">
+                    <p>Администраторы могут заполнять систему коэффициентами, статьями, справочными текстами</p>
+                </div>
+                <span class="caption-pointer"></span>
+            </div>
+            <div class="sprint-title">
+                <div class="title">Базовые модули, система администрирования</div>
+            </div>
+            <div class="sprint-description">
+                <div class="days">32 days</div>
+                <div class="hours"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 563 hours</div>
+                <div class="developers"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 4 developers</div>
+            </div>
+        </div>
+        <div class="sprint">
+            <div class="sprint-progress"></div>
+            <div class="sprint-finish-caption">
+                <div class="caption-textbox">
+                    <p>Становиться доступной возможность оформить заявку</p>
+                </div>
+                <span class="caption-pointer"></span>
+            </div>
+            <div class="sprint-title">
+                <div class="title">Система оформления заказа, программная модель формулы расчета цены</div>
+            </div>
+            <div class="sprint-description">
+                <div class="days">62 days</div>
+                <div class="hours"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 563 hours</div>
+                <div class="developers"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 4 developers</div>
+            </div>
+        </div>
+        <div class="sprint">
+            <div class="sprint-progress"></div>
+            <div class="sprint-finish-caption">
+                <div class="caption-textbox">
+                    <p>Тестирование кабинетов перевозчика и клиента</p>
+                </div>
+                <span class="caption-pointer"></span>
+            </div>
+            <div class="sprint-title">
+                <div class="title">Кабинеты перевозчика и клиента</div>
+            </div>
+            <div class="sprint-description">
+                <div class="days">17 days</div>
+                <div class="hours"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 563 hours</div>
+                <div class="developers"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 4 developers</div>
+            </div>
+        </div>
+        <div class="sprint">
+            <div class="sprint-progress"></div>
+            <div class="sprint-finish-caption">
+                <div class="caption-textbox">
+                    <p>Реализована оплата услуг посредством банковских карт</p>
+                </div>
+                <span class="caption-pointer"></span>
+            </div>
+            <div class="sprint-title">
+                <div class="title">Подключение системы оплат</div>
+            </div>
+            <div class="sprint-description">
+                <div class="days">38 days</div>
+                <div class="hours"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 563 hours</div>
+                <div class="developers"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 4 developers</div>
+            </div>
+        </div>
+        <div class="sprint">
+            <div class="sprint-progress"></div>
+            <div class="sprint-finish-caption">
+                <div class="caption-textbox">
+                    <p>Все требования заказчика реализованы</p>
+                </div>
+                <span class="caption-pointer"></span>
+            </div>
+            <div class="sprint-title">
+                <div class="title">Шлифовка интерфейсов и функционала</div>
+            </div>
+            <div class="sprint-description">
+                <div class="days">12 days</div>
+                <div class="hours"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 563 hours</div>
+                <div class="developers"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 4 developers</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="figure-caption">
+        Based on true story of <img src="/src/img/landing/stooller/logo_stooller.png" height="10" alt=""> development
+    </div>
+</div>

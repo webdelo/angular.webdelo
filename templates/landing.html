@@ -1,0 +1,55 @@
+<app-header></app-header>
+
+<div id="content-wrapper">
+    <div id="example-wrapper">
+        <div class="scrollContent">
+            <section>
+                <app-home></app-home>
+            </section>
+            <section class="demo" id="section-wipes">
+                <div id="pinContainer" class="steps-container">
+                    <div id="slideContainer">
+                        <section class="panel section-evaluation">
+                            <app-evaluation [run]="evaluationStart"></app-evaluation>
+                        </section>
+                        <section class="panel section-project-development">
+                            <app-project-development></app-project-development>
+                        </section>
+                        <section class="panel section-development">
+                            <app-development [run]="developmentStart"></app-development>
+                        </section>
+                        <section class="panel section-deployment">
+                            <app-deployment></app-deployment>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!--<div class="steps-container">-->
+<!--    <div class="section section-home">-->
+<!--        <app-home></app-home>-->
+<!--    </div>-->
+<!--    <div class="section section-evaluation">-->
+<!--        <div class="fp-tableCell">-->
+<!--            <app-evaluation [run]="evaluationStart"></app-evaluation>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="section section-project-development">-->
+<!--        <div class="fp-tableCell">-->
+<!--            <app-project-development></app-project-development>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="section section-development">-->
+<!--        <div class="fp-tableCell">-->
+<!--            <app-development [run]="developmentStart"></app-development>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="section section-deployment">-->
+<!--        <div class="fp-tableCell">-->
+<!--            <app-deployment></app-deployment>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

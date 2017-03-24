@@ -1,0 +1,110 @@
+<div class="figure evaluation-process" [ngClass]="{'run': run  }">
+    <button class="btn btn-success" (click)="repeat()">
+        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+    </button>
+
+    <div class="lamp-container">
+        <div class="lamp-title">Your idea</div>
+        <div class="lamp-circle">
+            <div class="lamp">
+                <div class="bulb">
+                    <div class="circle"></div>
+                    <div class="rectangle-middle"></div>
+                    <div class="rectangle"></div>
+                </div>
+                <div class="base"></div>
+            </div>
+        </div>
+        <div class="pointer">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="evaluation-container">
+        <div class="evaluation-title">Common evaluation</div>
+
+        <div class="evaluation-options">
+            <div class="first option">
+                <div class="caption">modules</div>
+            </div>
+            <div class="second option">
+                <div class="caption">objects</div>
+            </div>
+            <div class="third option">
+                <div class="caption">tpls</div>
+            </div>
+            <div class="fourth option">
+                <div class="caption">js files</div>
+            </div>
+            <div class="fifth option">
+                <div class="caption">mailers</div>
+            </div>
+            <div class="sixth option">
+                <div class="caption">sms</div>
+            </div>
+            <div class="summary option">
+                <div class="number">
+                    <countup [trigger]="true" [triggerOn]="run" [delay]="600" [start]="300" [end]="1000" [duration]="1"></countup>
+                </div>
+                <div class="caption">hours</div>
+            </div>
+        </div>
+
+        <div class="pointer">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="summary-container" [ngClass]="{
+        'developers-4': developersQuantity==4,
+        'developers-5': developersQuantity==5,
+        'developers-6': developersQuantity==6
+    }">
+        <div class="summary-title">Summary</div>
+
+        <div class="summary-content">
+            <div class="developers">
+                <div class="developers-quantity">
+                    <div class="developers-caption">Please choose developers quantity</div>
+                </div>
+                <div class="developers-content">
+                    <div (click)="chooseDevelopersQuantity(4)">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <b>4</b>
+                    </div>
+                    <div (click)="chooseDevelopersQuantity(5)">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <b>5</b>
+                    </div>
+                    <div (click)="chooseDevelopersQuantity(6)">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <b>6</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-timeline">
+                <div class="from">
+                    <h2>17</h2>
+                    <p>weeks</p>
+                </div>
+                <div class="line">
+                    <div class="summary-option">
+                        <div class="number">1000</div>
+                        <div class="caption">hours</div>
+                    </div>
+                </div>
+                <div class="to">
+                    <h2>25</h2>
+                    <p>weeks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

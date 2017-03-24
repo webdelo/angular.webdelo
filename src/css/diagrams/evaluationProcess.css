@@ -1,0 +1,873 @@
+.figure.evaluation-process {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 730px;
+    height: 250px;
+    margin-left: -365px;
+}
+
+.figure.evaluation-process .btn {
+    position: absolute;
+    opacity: 0;
+    top: 113px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    z-index: 10;
+}
+
+.figure.evaluation-process .lamp-container {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.figure.evaluation-process .lamp-circle {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #636363;
+}
+
+.figure.evaluation-process .lamp-container .pointer {
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 75%;
+    width: 130px;
+    height: 10px;
+    margin-top: -5px;
+    /*background: #818181;*/
+}
+.figure.evaluation-process .evaluation-container .pointer {
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 92%;
+    width: 130px;
+    height: 10px;
+    margin-top: -5px;
+    /*background: #818181;*/
+}
+
+.figure.evaluation-process .pointer div {
+    display: block;
+    float: left;
+    margin-left: 6px;
+    margin-top: -9px;
+    background: #e1e1e1;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.lamp {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+.lamp .base {
+    position: absolute;
+    top: 37px;
+    left: 9px;
+    width: 12px;
+    height: 8px;
+    background: #cbcbcb;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.lamp .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.lamp-container .lamp-title {
+    width: 100%;
+    color: #636363;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.lamp .rectangle-middle {
+    position: absolute;
+    top: 21px;
+    left: 6px;
+    width: 18px;
+    height: 16px;
+    z-index: 2;
+    background: #ffffff;
+    -webkit-transform: perspective(30px) rotateX(-57deg);
+    transform: perspective(30px) rotateX(-57deg);
+}
+
+.lamp .rectangle {
+    position: absolute;
+    top: 32px;
+    left: 8px;
+    width: 14px;
+    height: 6px;
+    z-index: 2;
+    -webkit-transform: perspective(23px) rotateX(-24deg);
+    transform: perspective(33px) rotateX(-24deg);
+    background: #ffffff;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.evaluation-container {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
+    width: 225px;
+}
+
+.evaluation-container .evaluation-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: #636363;
+    opacity: 0;
+}
+.evaluation-container .evaluation-options .option {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #7d7d7d;
+    -webkit-box-shadow:  0 0 3px #8c8c8c;
+    -moz-box-shadow:  0 0 3px #8c8c8c;
+    box-shadow:  0 0 3px #8c8c8c;
+}
+.evaluation-container .evaluation-options .option div {
+    width: 45px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.evaluation-container .evaluation-options .option div.number {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-top: 3px;
+}
+.evaluation-container .evaluation-options .option div.caption {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.evaluation-container .evaluation-options .option.first {
+    background: #D01183;
+    position: absolute;
+    left: 50%;
+    margin-left: -23px;
+    top: 30px;
+    opacity: 0;
+}
+.evaluation-container .evaluation-options .option.second {
+    background: #125ED0;
+    position: absolute;
+    left: 75%;
+    margin-left: -23px;
+    top: 60px;
+    opacity: 0;
+}
+.evaluation-container .evaluation-options .option.third {
+    background: #1794A8;
+    position: absolute;
+    left: 75%;
+    margin-left: -23px;
+    top: 121px;
+    opacity: 0;
+}
+.evaluation-container .evaluation-options .option.fourth {
+    background: #26A01F;
+    position: absolute;
+    left: 50%;
+    margin-left: -23px;
+    top: 152px;
+    opacity: 0;
+}
+.evaluation-container .evaluation-options .option.fifth {
+    background: #DB8412;
+    position: absolute;
+    left: 25%;
+    margin-left: -23px;
+    top: 121px;
+    opacity: 0;
+}
+.evaluation-container .evaluation-options .option.sixth {
+    background: #E63C10;
+    position: absolute;
+    left: 25%;
+    margin-left: -23px;
+    top: 60px;
+    opacity: 0;
+}
+
+.evaluation-container .evaluation-options .summary {
+    display: inline-block;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    margin-left: -33px;
+    margin-top: -33px;
+    width: 66px;
+    height: 66px;
+    background: #7915A4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow:  0 0 3px #8c8c8c;
+    -moz-box-shadow:  0 0 3px #8c8c8c;
+    box-shadow:  0 0 3px #8c8c8c;
+    opacity: 0;
+}
+.evaluation-container .evaluation-options .summary div.number {
+    margin-top: 9px;
+    width: 66px;
+    font-size: 26px;
+}
+.evaluation-container .evaluation-options .summary div.caption {
+    width: 65px;
+    margin-top: -7px;
+}
+
+
+
+.summary-container {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
+    width: 230px;
+    margin-left: 25px;
+}
+
+.summary-container .summary-title {
+    width: 100%;
+    color: #636363;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.summary-container .summary-content .developers {
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    width: 120px;
+    height: 160px;
+
+}
+
+.summary-container .summary-content .developers-quantity {
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    top: 10px;
+    background: #bbbbbb;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 23px 5px 0 7px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 1px 0px #a5a5a5;
+    box-shadow: inset 0 0 13px -7px #000;
+    opacity: 0;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+}
+
+.summary-container.developers-4 .summary-content .developers-quantity,
+.summary-container.developers-5 .summary-content .developers-quantity,
+.summary-container.developers-6 .summary-content .developers-quantity {
+    background: #f3f3f3;
+    transition-delay: 300ms;
+}
+@keyframes activateDevQuantity {
+    100% {
+        background: #f3f3f3;
+    }
+}
+
+
+.summary-container .summary-content .developers-quantity .developers-caption {
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+}
+
+.summary-container.developers-4 .summary-content .developers-quantity .developers-caption,
+.summary-container.developers-5 .summary-content .developers-quantity .developers-caption,
+.summary-container.developers-6 .summary-content .developers-quantity .developers-caption {
+    opacity: 0;
+}
+
+.summary-container.developers-4 .developers-content div:nth-child(1) {
+    animation: developersChosen 800ms both cubic-bezier(.94,.87,.66,1);
+}
+@keyframes developersChosen {
+    50% {
+        top: 25px;
+        right: 82px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+    }
+    100% {
+        top: 17px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 25px;
+        margin-left: -35px;
+    }
+}
+.summary-container.developers-5 .developers-content div:nth-child(2) {
+    animation: developersChosen 800ms both cubic-bezier(.94,.87,.66,1);
+}
+.summary-container.developers-6 .developers-content div:nth-child(3) {
+    animation: developersChosen 800ms both cubic-bezier(.94,.87,.66,1);
+}
+
+.summary-container .summary-content .developers .icon {
+    font-size: 30px;
+    text-align: center;
+    width: 36px;
+}
+
+.summary-container .summary-content .developers .developers-content div {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #13A2E4;
+    font-size: 14px;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin: 3px 0;
+    margin-left: -18px;
+    -webkit-box-shadow: 0 0 3px #333;
+    -moz-box-shadow: 0 0 3px #333;
+    box-shadow: 0 0 3px #333;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+.summary-container .summary-content .developers .developers-content div b {
+    font-weight: 300;
+}
+
+.summary-container .summary-content .developers .developers-content div:hover
+{
+    background: #7915a4;
+}
+
+.summary-container .summary-content .developers .developers-content div .glyphicon {
+    font-size: 12px;
+    margin-left: -2px;
+    top: 0;
+}
+
+
+.summary-container .summary-content .developers .developers-content div:nth-child(1) {
+    top: 88px;
+    left: 15%;
+}
+.summary-container .summary-content .developers .developers-content div:nth-child(2) {
+    top: 102px;
+    left: 50%;
+}
+.summary-container .summary-content .developers .developers-content div:nth-child(3) {
+    top: 88px;
+    left: 85%;
+}
+.summary-container .summary-content .summary-timeline {
+    position: absolute;
+    top: 35px;
+    height: 50px;
+    width: 170px;
+    opacity: 0;
+    left: 50%;
+    margin-left: -85px;
+}
+.summary-container .summary-content .summary-timeline .from {
+    position: absolute;
+    color: #333;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+.summary-container .summary-content .summary-timeline .from:after,
+.summary-container .summary-content .summary-timeline .to:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 1px;
+    height: 6px;
+    background: #b6b6b6;
+}
+
+
+.summary-container .summary-content .summary-timeline .to {
+    position: absolute;
+    left: 130px;
+    width: 40px;
+    height: 40px;
+    color: #333;
+}
+
+.summary-timeline h2 {
+    padding: 0;
+    margin: 8px 0 0 0;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    color: #333;
+}
+.summary-timeline p {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.summary-container .summary-content .summary-timeline .line {
+    position: absolute;
+    height: 1px;
+    width: 170px;
+    background: #b6b6b6;
+    left: 0px;
+    top: 42px;
+    z-index: 9;
+}
+
+.summary-container .summary-content .summary-timeline .summary-option {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+    width: 48px;
+    height: 48px;
+    background: #7915A4;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 3px 1px #8c8c8c;
+    -moz-box-shadow: 0 0 3px 1px #8c8c8c;
+    box-shadow: 0 0 3px 1px #8c8c8c;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 400ms;
+}
+
+.summary-container .summary-content .summary-timeline .summary-option:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 1px;
+    height: 6px;
+    background: #b6b6b6;
+
+}
+
+.summary-container.developers-4 .summary-content .summary-timeline .summary-option {
+    left: 65%;
+}
+.summary-container.developers-5 .summary-content .summary-timeline .summary-option {
+    left: 50%;
+}
+.summary-container.developers-6 .summary-content .summary-timeline .summary-option {
+    left: 35%;
+}
+
+
+.summary-container .summary-content .summary-timeline .summary-option div.number {
+    margin-top: 12px;
+    width: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.summary-container .summary-content .summary-timeline .summary-option div.caption {
+    width: 48px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 9px;
+}
+
+
+.figure.run .summary-container .summary-content .summary-timeline {
+    -webkit-animation: timeLineIn 400ms 3500ms forwards;
+    -o-animation: timeLineIn 400ms 3500ms forwards;
+    animation: timeLineIn 400ms 3500ms forwards;
+}
+@keyframes timeLineIn {
+    100% {
+        opacity: 1;
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.figure.run .lamp-container .lamp-title {
+    -webkit-animation: fadeIn 200ms forwards;
+    -o-animation: fadeIn 200ms forwards;
+    animation: fadeIn 200ms forwards;
+}
+
+.figure.run .summary-container .summary-title {
+    -webkit-animation: fadeIn 200ms 3400ms forwards;
+    -o-animation: fadeIn 200ms 3400ms forwards;
+    animation: fadeIn 200ms 3400ms forwards;
+}
+.figure.run .summary-container .developers,
+.figure.run .summary-container .developers-quantity {
+    -webkit-animation: fadeIn 400ms 4200ms forwards;
+    -o-animation: fadeIn 400ms 4200ms forwards;
+    animation: fadeIn 400ms 4200ms forwards;
+}
+
+.figure.run .lamp .circle {
+    -webkit-animation: lampOn 100ms forwards cubic-bezier(.13,.6,.82,.21);
+    -o-animation: lampOn 100ms forwards cubic-bezier(.13,.6,.82,.21);
+    animation: lampOn 100ms forwards cubic-bezier(.13,.6,.82,.21);
+}
+.figure.run .lamp .rectangle,
+.figure.run .lamp .rectangle-middle {
+    -webkit-animation: lampOnHelp 100ms forwards cubic-bezier(.13,.6,.82,.21);
+    -o-animation: lampOnHelp 100ms forwards cubic-bezier(.13,.6,.82,.21);
+    animation: lampOnHelp 100ms forwards cubic-bezier(.13,.6,.82,.21);
+}
+
+.figure.run .evaluation-options .option.first {
+    animation: optionOn 200ms forwards;
+    -webkit-animation-delay: 600ms;
+    -moz-animation-delay: 600ms;
+    -o-animation-delay: 600ms;
+    animation-delay: 600ms;
+}
+.figure.run .evaluation-options .option.second {
+    animation: optionOn 200ms forwards;
+    -webkit-animation-delay: 800ms;
+    -moz-animation-delay: 800ms;
+    -o-animation-delay: 800ms;
+    animation-delay: 800ms;
+}
+.figure.run .evaluation-options .option.third {
+    animation: optionOn 200ms forwards;
+    -webkit-animation-delay: 1000ms;
+    -moz-animation-delay: 1000ms;
+    -o-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+}
+.figure.run .evaluation-options .option.fourth {
+    animation: optionOn 200ms forwards;
+    -webkit-animation-delay: 1200ms;
+    -moz-animation-delay: 1200ms;
+    -o-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+.figure.run .evaluation-options .option.fifth {
+    animation: optionOn 200ms forwards;
+    -webkit-animation-delay: 5800ms;
+    -moz-animation-delay: 1200ms;
+    -o-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+.figure.run .evaluation-options .option.sixth {
+    animation: optionOn 200ms forwards;
+    -webkit-animation-delay: 1400ms;
+    -moz-animation-delay: 1400ms;
+    -o-animation-delay: 1400ms;
+    animation-delay: 1400ms;
+}
+.figure.run .evaluation-options .option.summary {
+    animation: optionOnExt 200ms forwards;
+    -webkit-animation-delay: 400ms;
+    -moz-animation-delay: 400ms;
+    -o-animation-delay: 400ms;
+    animation-delay: 400ms;
+}
+
+.figure.run .evaluation-title {
+    animation: fadeIn 200ms forwards;
+    -webkit-animation-delay: 400ms;
+    -moz-animation-delay: 400ms;
+    -o-animation-delay: 400ms;
+    animation-delay: 400ms;
+}
+
+.figure.run .lamp-container .pointer div:nth-child(1) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 200ms;
+    -moz-animation-delay: 200ms;
+    -o-animation-delay: 200ms;
+    animation-delay: 200ms;
+}
+.figure.run .lamp-container .pointer div:nth-child(2) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 250ms;
+    -moz-animation-delay: 250ms;
+    -o-animation-delay: 250ms;
+    animation-delay: 250ms;
+}
+.figure.run .lamp-container .pointer div:nth-child(3) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 300ms;
+    -moz-animation-delay: 300ms;
+    -o-animation-delay: 300ms;
+    animation-delay: 300ms;
+}
+.figure.run .lamp-container .pointer div:nth-child(4) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 350ms;
+    -moz-animation-delay: 350ms;
+    -o-animation-delay: 350ms;
+    animation-delay: 350ms;
+}
+.figure.run .lamp-container .pointer div:nth-child(5) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 400ms;
+    -moz-animation-delay: 400ms;
+    -o-animation-delay: 400ms;
+    animation-delay: 400ms;
+}
+.figure.run .lamp-container .pointer div:nth-child(6) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 450ms;
+    -moz-animation-delay: 450ms;
+    -o-animation-delay: 450ms;
+    animation-delay: 450ms;
+}
+.figure.run .lamp-container .pointer div:nth-child(7) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    -o-animation-delay: 500ms;
+    animation-delay: 500ms;
+}
+.figure.run .lamp-container .pointer div:nth-child(8) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 550ms;
+    -moz-animation-delay: 550ms;
+    -o-animation-delay: 550ms;
+    animation-delay: 550ms;
+}
+
+
+.figure.run .evaluation-container .pointer div:nth-child(1) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 2600ms;
+    -moz-animation-delay: 2600ms;
+    -o-animation-delay: 2600ms;
+    animation-delay: 2600ms;
+}
+.figure.run .evaluation-container .pointer div:nth-child(2) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 2650ms;
+    -moz-animation-delay: 2650ms;
+    -o-animation-delay: 2650ms;
+    animation-delay: 2650ms;
+}
+.figure.run .evaluation-container .pointer div:nth-child(3) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 2700ms;
+    -moz-animation-delay: 2700ms;
+    -o-animation-delay: 2700ms;
+    animation-delay: 2700ms;
+}
+.figure.run .evaluation-container .pointer div:nth-child(4) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 2750ms;
+    -moz-animation-delay: 2750ms;
+    -o-animation-delay: 2750ms;
+    animation-delay: 2750ms;
+}
+.figure.run .evaluation-container .pointer div:nth-child(5) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 2800ms;
+    -moz-animation-delay: 2800ms;
+    -o-animation-delay: 2800ms;
+    animation-delay: 2800ms;
+}
+.figure.run .evaluation-container .pointer div:nth-child(6) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 2850ms;
+    -moz-animation-delay: 2850ms;
+    -o-animation-delay: 2850ms;
+    animation-delay: 2850ms;
+}
+.figure.run .evaluation-container .pointer div:nth-child(7) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 2900ms;
+    -o-animation-delay: 2900ms;
+    animation-delay: 2900ms;
+}
+.figure.run .evaluation-container .pointer div:nth-child(8) {
+    animation: babbleOn 50ms forwards cubic-bezier(.65,.42,0,1.43), toggleBackground 4s infinite cubic-bezier(.65,.42,0,1.43);
+    -webkit-animation-delay: 2950ms;
+    -moz-animation-delay: 2950ms;
+    -o-animation-delay: 2950ms;
+    animation-delay: 2950ms;
+}
+.figure.run .btn {
+    -webkit-animation:fadeIn 1s 8000ms forwards;
+    -o-animation:fadeIn 1s 8000ms forwards;
+    animation: fadeIn 1s 8000ms forwards;
+}
+
+
+@keyframes babbleOn {
+    5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes toggleBackground {
+    0% {
+        background: #e1e1e1;
+    }
+    46% {
+        background: #e1e1e1;
+    }
+    48% {
+        background: rgba(250, 233, 66, 0.51);
+    }
+    50% {
+        background: rgba(208, 17, 131, 0.51);
+    }
+    52% {
+        background: rgba(18, 94, 208, 0.51);
+    }
+    54% {
+        background: rgba(23, 148, 168, 0.51);
+    }
+    56% {
+        background: rgba(38, 160, 31, 0.51);
+    }
+    58% {
+        background: rgba(219, 132, 18, 0.51);
+    }
+    60% {
+        background: rgba(230, 60, 16, 0.51);
+    }
+    62% {
+        background: rgba(121, 21, 164, 0.51);
+    }
+    64% {
+        background: #e1e1e1;
+    }
+    70% {
+        background: #e1e1e1;
+    }
+}
+
+@keyframes optionOn {
+    50% {
+        opacity: 1;
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes optionOnExt {
+    50% {
+        opacity: 1;
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes lampOn {
+    100% {
+        background: #fae942;
+        box-shadow: 0 0 40px 3px #fae942;
+    }
+}
+@keyframes lampOnHelp {
+    100% {
+        background: #fae942;
+    }
+}

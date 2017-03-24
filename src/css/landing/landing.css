@@ -1,0 +1,48 @@
+
+
+.section-header h1 {
+    color: #4b4b4b;
+    text-shadow: 0 0 1px #d2d2d2;
+    padding-top: 70px;
+    font-size: 4em;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .section-header h1 {
+        color: #4b4b4b;
+        text-shadow: 0 0 1px #d2d2d2;
+        padding-top: 45px;
+        font-size: 2.4em;
+        margin-bottom: 0;
+    }
+
+    .section-header h4 {
+        font-size: 14px;
+        margin: 2px 0;
+    }
+}
+
+blockquote.quote-copy {
+    border: none;
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: -.008em;
+}
+
+.quote-author {
+    margin-left: 20px;
+}
+
+.quote-author .caption-headline {
+    font-weight: 400;
+    margin: 0;
+}
+
+.quote-author .caption-copy {
+    font-size: 14px;
+    line-height: 1.28583;
+    font-weight: 200;
+    letter-spacing: 0em;
+}

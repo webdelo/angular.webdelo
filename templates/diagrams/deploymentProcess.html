@@ -1,0 +1,91 @@
+<div class="figure deployment-process" [ngClass]="{'run': run  }">
+    <div class="figure-header text-center" (click)="start()" *ngIf="!run">
+        <div>Deployment in</div>
+        <div class="tenSeconds">8</div>
+        <div>seconds</div>
+    </div>
+    <button class="btn btn-success" (click)="repeat()" *ngIf="run">
+        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+    </button>
+
+    <div class="figure-content" *ngIf="run">
+        <div class="files">
+            <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+        </div>
+
+        <div class="dev-zone circle">
+            <div class="dev-zone-title zone-title">
+                Development environment
+            </div>
+        </div>
+        <div class="production-container">
+            <div class="production-zone circle">
+                <div class="production-zone-fillable">
+                    <div class="fillable-title">
+                        <countup [delay]="2600" [duration]="5" [trigger]="true" [triggerOn]="run" [start]="0" [end]="100"></countup>%
+                    </div>
+                    <div class="production-zone-fill"></div>
+                </div>
+                <div class="production-zone-title zone-title">
+                    Production environment
+                    <span class="status status-offline">Offline</span>
+                    <span class="status status-preparing">Preparing</span>
+                    <span class="status status-ready">Ready</span>
+                </div>
+            </div>
+            <div class="server-settings circle">
+                <div class="zone-config">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </div>
+                <div class="zone-ready">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </div>
+                <div class="server-settings-title zone-title">
+                    <div><img src="/src/img/landing/deployment/aws_3.png" height="18" alt=""> Amazon server settings</div>
+                    <div class="additional">Back ups, SSL configuration etc</div>
+                </div>
+                <div class="pointer"></div>
+            </div>
+            <div class="search-analytics circle">
+                <div class="zone-config">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </div>
+                <div class="zone-ready">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </div>
+                <div class="search-analytics-title zone-title">
+                    <div><img src="/src/img/landing/deployment/google.png" height="18" alt=""></div>
+                    <div class="additional">Maps, Calendar, Directions, Places, Autocomplete</div>
+                </div>
+                <div class="pointer"></div>
+            </div>
+            <div class="payment-systems circle">
+                <div class="zone-config">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </div>
+                <div class="zone-ready">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </div>
+                <div class="payment-systems-title zone-title">
+                    <div><img src="/src/img/landing/deployment/twilio.png" height="20" alt=""></div>
+                    <div class="additional">SMS</div>
+                </div>
+                <div class="pointer"></div>
+            </div>
+            <div class="subscription-systems circle">
+                <div class="zone-config">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </div>
+                <div class="zone-ready">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </div>
+                <div class="subscription-systems-title zone-title">
+                    <div><img src="/src/img/landing/deployment/stripe.png" height="21" alt=""></div>
+                    <div class="additional">Payments</div>
+                </div>
+                <div class="pointer"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
